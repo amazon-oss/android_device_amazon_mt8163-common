@@ -32,7 +32,11 @@ on init
 on fs
     # Mount everything
     symlink /dev/block/platform/soc/11230000.mmc /dev/block/platform/mtk-msdc.0
-    mount_all /vendor/etc/fstab.mt8163
+    mount_all /vendor/etc/fstab.mt8163 --early
+
+on late-fs
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.mt8163 --late
 
 on post-fs
     # Frequency
