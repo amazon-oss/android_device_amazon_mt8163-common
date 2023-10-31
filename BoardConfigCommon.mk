@@ -53,6 +53,9 @@ TARGET_COPY_OUT_SYSTEM := system
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt8163
+
 # Verified Boot
 BOARD_AVB_ENABLE := false
 
