@@ -7,6 +7,13 @@
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt8163 \
+    init.mt8163.rc \
+    init.mt8163.usb.rc \
+    ueventd.mt8163.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
