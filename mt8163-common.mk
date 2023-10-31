@@ -7,6 +7,10 @@
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.mt8163.rc:recovery/root/init.recovery.mt8163.rc
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt8163 \
