@@ -28,5 +28,10 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 -
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# Platform
+BOARD_USES_MTK_HARDWARE := true
+TARGET_BOARD_PLATFORM := mt8163
+TARGET_BOARD_VENDOR := amazon
+
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
