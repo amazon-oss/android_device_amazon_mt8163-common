@@ -10,6 +10,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt8163 \
+    fstab.mt8163_ramdisk \
     init.mt8163.rc \
     init.mt8163.usb.rc \
     ueventd.mt8163.rc
