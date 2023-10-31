@@ -41,5 +41,8 @@ KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-li
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
 
+# Verified Boot
+BOARD_AVB_ENABLE := false
+
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
