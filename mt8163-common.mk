@@ -20,6 +20,15 @@ PRODUCT_PACKAGES += \
     libgui_ext \
     libui_ext
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@3.0-impl
+
+PRODUCT_PACKAGES += \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
