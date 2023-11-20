@@ -34,6 +34,16 @@ lib64/libmtkshifter.so:vendor/lib64/libmtkshifter.so|ba4a029a3c56056b44dbb935fb8
 lib64/libsmartvolume.so:vendor/lib64/libsmartvolume.so|7267b4f9a5d0a34ae2c0d4cd8a016a5c99119985
 lib64/libspeech_enh_lib.so:vendor/lib64/libspeech_enh_lib.so|d95c8e5465445a19c230d3c4a0e2c8474d036f5b
 
+# Connectivity
+bin/6620_launcher:vendor/bin/6620_launcher
+bin/6620_wmt_concurrency:bin/6620_wmt_concurrency
+bin/6620_wmt_lpbk:vendor/bin/wmt_loader
+bin/wmt_loader:vendor/bin/wmt_loader
+etc/firmware/ROMv2_lm_patch_1_0_hdr.bin:vendor/etc/firmware/ROMv2_lm_patch_1_0_hdr.bin
+etc/firmware/ROMv2_lm_patch_1_1_hdr.bin:vendor/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin
+etc/firmware/WIFI_RAM_CODE_8163:vendor/etc/firmware/WIFI_RAM_CODE_8163
+etc/firmware/WMT_SOC.cfg:vendor/etc/firmware/WMT_SOC.cfg
+
 # Display
 bin/aal:vendor/bin/aal
 bin/ged_srv:vendor/bin/ged_srv
@@ -83,3 +93,15 @@ lib64/libcustom_nvram.so:vendor/lib64/libcustom_nvram.so
 lib64/libnvram.so:vendor/lib64/libnvram.so
 lib64/libnvram_platform.so:vendor/lib64/libnvram_platform.so
 lib64/libfile_op.so:vendor/lib64/libfile_op.so
+
+# Wi-Fi - from full_px556_kw-user 10 QP1A.190711.020 1585833944 release-keys
+vendor/bin/hostapd_cli|2d267f7e8c00ef0d7ee6c683aa400cb176fcb25c
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|11de651333ef53a2d426fce3bb6d6d95544c27eb
+vendor/bin/hw/hostapd|ef3ae9d442f36473155730e0e48e6ff0470d3a71
+vendor/bin/hw/wpa_supplicant|59605c46d90f34a304f84298962a00a504de5003
+vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc|bd3726847a0068d4e252b2d4f5c168b38b982074
+vendor/etc/init/hostapd.android.rc|0f8128bb83c4cbe80760f1a040960cfe439d2d6f
+vendor/lib64/libwapi.so|f2b823612ebbc045c90a44a4806165247fbbfad8
+vendor/lib64/libwifi-hal.so|bdc95a83b30b68a04ed1bce171f77586e6bc7262
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|b71d1cac0a17c37a628dbfc806c47fec3addcca1
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|4af9d9e28dac45043c140e7db8ab15a68e6a95c7

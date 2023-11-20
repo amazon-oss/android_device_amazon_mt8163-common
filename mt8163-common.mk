@@ -90,5 +90,23 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/amazon \
     hardware/mediatek
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0 \
+    android.hardware.wifi@1.1 \
+    android.hardware.wifi@1.2 \
+    android.hardware.wifi@1.3 \
+    android.hardware.wifi.supplicant@1.0 \
+    android.hardware.wifi.supplicant@1.1 \
+    android.hardware.wifi.supplicant@1.2
+
+PRODUCT_PACKAGES += \
+    libnl \
+    libwpa_client \
+    libwifi-system-iface
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/amazon/mt8163-common/mt8163-common-vendor.mk)
