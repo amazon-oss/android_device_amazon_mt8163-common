@@ -65,5 +65,8 @@ include device/amazon/sepolicy/SEPolicy.mk
 # Verified Boot
 BOARD_AVB_ENABLE := false
 
+# Vintf
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
