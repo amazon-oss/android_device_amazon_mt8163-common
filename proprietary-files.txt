@@ -1,0 +1,32 @@
+# Unpinned blobs from douglas-user 5.1.1 LVY48F 50.6.5.9_user_659664620 release-keys
+
+# Display
+bin/aal:vendor/bin/aal
+bin/ged_srv:vendor/bin/ged_srv
+bin/guiext-server:vendor/bin/guiext-server
+lib/egl/egl.cfg:vendor/lib/egl/egl.cfg
+lib/egl/libGLES_mali.so:vendor/lib/egl/libGLES_mali.so
+lib/hw/gralloc.mt8163.mali.so:vendor/lib/hw/gralloc.mt8163.mali.so
+lib/hw/hwcomposer.mt8163.so:vendor/lib/hw/hwcomposer.mt8163.so
+lib/hw/memtrack.mt8163.so:vendor/lib/hw/memtrack.mt8163.so
+lib/libGdmaScalerPipe.so:vendor/lib/libGdmaScalerPipe.so
+lib/libaal.so:vendor/lib/libaal.so
+lib/libaal_cust.so:vendor/lib/libaal_cust.so
+lib/libdpframework.so:vendor/lib/libdpframework.so
+lib/libged.so:vendor/lib/libged.so
+lib/libgpu_aux.so:vendor/lib/libgpu_aux.so
+lib/libion_mtk.so:vendor/lib/libion_mtk.so
+lib/libm4u.so:vendor/lib/libm4u.so
+lib/libstlport.so:vendor/lib/libstlport.so
+lib64/egl/libGLES_mali.so:vendor/lib64/egl/libGLES_mali.so
+lib64/hw/gralloc.mt8163.mali.so:vendor/lib64/hw/gralloc.mt8163.mali.so
+lib64/hw/hwcomposer.mt8163.so:vendor/lib64/hw/hwcomposer.mt8163.so
+lib64/hw/memtrack.mt8163.so:vendor/lib64/hw/memtrack.mt8163.so
+lib64/libaal.so:vendor/lib64/libaal.so
+lib64/libaal_cust.so:vendor/lib64/libaal_cust.so
+lib64/libdpframework.so:vendor/lib64/libdpframework.so
+lib64/libged.so:vendor/lib64/libged.so
+lib64/libgpu_aux.so:vendor/lib64/libgpu_aux.so
+lib64/libion_mtk.so:vendor/lib64/libion_mtk.so
+lib64/libm4u.so:vendor/lib64/libm4u.so
+lib64/libstlport.so:vendor/lib64/libstlport.so
