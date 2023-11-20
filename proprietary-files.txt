@@ -36,3 +36,16 @@ lib/hw/keystore.mt8163.so:vendor/lib/hw/keystore.mt8163.so
 lib/libtz_uree.so:vendor/lib/libtz_uree.so
 lib64/hw/keystore.mt8163.so:vendor/lib64/hw/keystore.mt8163.so
 lib64/libtz_uree.so:vendor/lib64/libtz_uree.so
+
+# NVRAM
+bin/nvram_daemon:vendor/bin/nvram_daemon
+lib/libcustom_nvram.so:vendor/lib/libcustom_nvram.so
+lib/libfile_op.so:vendor/lib/libfile_op.so
+lib/libnvram.so:vendor/lib/libnvram.so
+lib/libnvram_daemon_callback.so:vendor/lib/libnvram_daemon_callback.so
+lib/libnvram_platform.so:vendor/lib/libnvram_platform.so
+lib/libnvramagentclient.so:vendor/lib/libnvramagentclient.so
+lib64/libcustom_nvram.so:vendor/lib64/libcustom_nvram.so
+lib64/libnvram.so:vendor/lib64/libnvram.so
+lib64/libnvram_platform.so:vendor/lib64/libnvram_platform.so
+lib64/libfile_op.so:vendor/lib64/libfile_op.so
