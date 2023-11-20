@@ -53,6 +53,9 @@ TARGET_COPY_OUT_SYSTEM := system
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt8163
 
