@@ -26,7 +26,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # Boot
 BOARD_KERNEL_BASE := 0x40078000
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x07f88000 --header_version 0x0
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x291cce00 --second_offset 0x00e88000 --tags_offset 0x07f88000 --header_version 0x0
 
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
