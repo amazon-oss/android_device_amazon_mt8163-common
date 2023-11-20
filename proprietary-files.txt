@@ -1,0 +1,32 @@
+# Unpinned blobs from douglas-user 5.1.1 LVY48F 50.6.5.9_user_659664620 release-keys
+
+# Display
+bin/aal
+bin/ged_srv
+bin/guiext-server
+lib/egl/egl.cfg
+lib/egl/libGLES_mali.so
+lib/hw/gralloc.mt8163.mali.so
+lib/hw/hwcomposer.mt8163.so
+lib/hw/memtrack.mt8163.so
+lib/libGdmaScalerPipe.so
+lib/libaal.so
+lib/libaal_cust.so
+lib/libdpframework.so
+lib/libged.so
+lib/libgpu_aux.so
+lib/libion_mtk.so
+lib/libm4u.so
+lib/libstlport.so
+lib64/egl/libGLES_mali.so
+lib64/hw/gralloc.mt8163.mali.so
+lib64/hw/hwcomposer.mt8163.so
+lib64/hw/memtrack.mt8163.so
+lib64/libaal.so
+lib64/libaal_cust.so
+lib64/libdpframework.so
+lib64/libged.so
+lib64/libgpu_aux.so
+lib64/libion_mtk.so
+lib64/libm4u.so
+lib64/libstlport.so
