@@ -139,6 +139,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/amazon \
     hardware/mediatek
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.basic
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0 \
