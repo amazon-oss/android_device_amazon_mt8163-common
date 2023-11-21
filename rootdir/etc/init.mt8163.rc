@@ -364,3 +364,6 @@ on property:sys.conn_macs.ready=1
     # Bluetooth
     chown bluetooth bluetooth /data/vendor/bluedroid/macbt
     chmod 0666 /data/vendor/bluedroid/macbt
+
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
