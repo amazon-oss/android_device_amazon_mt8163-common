@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Apex
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/linker/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
+
 # Binder
 PRODUCT_PACKAGES += \
     libhidltransport \
