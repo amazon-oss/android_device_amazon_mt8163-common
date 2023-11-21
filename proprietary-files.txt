@@ -34,6 +34,11 @@ lib64/libmtkshifter.so|ba4a029a3c56056b44dbb935fb85c0377fc211d3
 lib64/libsmartvolume.so|7267b4f9a5d0a34ae2c0d4cd8a016a5c99119985
 lib64/libspeech_enh_lib.so|d95c8e5465445a19c230d3c4a0e2c8474d036f5b
 
+# Bluetooth
+bin/autobt
+lib/libmsbc_mtk.so
+lib64/libmsbc_mtk.so
+
 # Connectivity
 bin/6620_launcher
 bin/6620_wmt_concurrency
@@ -85,12 +90,12 @@ lib64/libtz_uree.so
 bin/nvram_daemon
 lib/libcustom_nvram.so
 lib/libfile_op.so
-lib/libnvram.so
+-lib/libnvram.so
 lib/libnvram_daemon_callback.so
 lib/libnvram_platform.so
 lib/libnvramagentclient.so
 lib64/libcustom_nvram.so
-lib64/libnvram.so
+-lib64/libnvram.so
 lib64/libnvram_platform.so
 lib64/libfile_op.so
 
