@@ -122,6 +122,11 @@ vendor/lib/libwvm.so
 vendor/lib/mediadrm/libplayreadydrmplugin.so
 vendor/lib64/liboemcrypto.so
 
+# IDME
+bin/devicetype_service
+bin/idme
+bin/wipe_fos_flags
+
 # Keymaster
 lib/hw/keystore.mt8163.so
 lib/libtz_uree.so
