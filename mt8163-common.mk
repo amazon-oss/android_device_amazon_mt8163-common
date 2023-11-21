@@ -63,6 +63,12 @@ PRODUCT_PACKAGES += \
     libgui_ext \
     libui_ext
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.1-service.clearkey
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
