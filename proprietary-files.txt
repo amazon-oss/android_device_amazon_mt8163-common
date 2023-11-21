@@ -88,6 +88,38 @@ lib/libtz_uree.so:vendor/lib/libtz_uree.so
 lib64/hw/keystore.mt8163.so:vendor/lib64/hw/keystore.mt8163.so
 lib64/libtz_uree.so:vendor/lib64/libtz_uree.so
 
+# Media (OMX)
+etc/mtk_omx_core.cfg:vendor/etc/mtk_omx_core.cfg
+lib/libJpgDecPipe.so:vendor/lib/libJpgDecPipe.so
+lib/libJpgEncPipe.so:vendor/lib/libJpgEncPipe.so
+lib/libMtkOmxAIVPlayer.so:vendor/lib/libMtkOmxAIVPlayer.so
+lib/libMtkOmxCore.so:vendor/lib/libMtkOmxCore.so
+lib/libMtkOmxMp3Dec.so:vendor/lib/libMtkOmxMp3Dec.so
+lib/libMtkOmxVdecEx.so:vendor/lib/libMtkOmxVdecEx.so
+lib/libMtkOmxVenc.so:vendor/lib/libMtkOmxVenc.so
+lib/libSwJpgCodec.so:vendor/lib/libSwJpgCodec.so
+lib/libcvsd_mtk.so:vendor/lib/libcvsd_mtk.so
+lib/libhevce_sb.ca7.android.so:vendor/lib/libhevce_sb.ca7.android.so
+lib/libmhalImageCodec.so:vendor/lib/libmhalImageCodec.so
+lib/libmp4enc_sa.ca7.so:vendor/lib/libmp4enc_sa.ca7.so
+lib/libmtk_mmutils.so:vendor/lib/libmtk_mmutils.so
+lib/libmtkjpeg.so:vendor/lib/libmtkjpeg.so
+lib/libstagefrighthw.so:vendor/lib/libstagefrighthw.so
+lib/libvc1dec_sa.ca7.so:vendor/lib/libvc1dec_sa.ca7.so
+lib/libvcodec_oal.so:vendor/lib/libvcodec_oal.so
+lib/libvcodec_utility.so:vendor/lib/libvcodec_utility.so
+lib/libvcodecdrv.so:vendor/lib/libvcodecdrv.so
+lib/libvp8dec_sa.ca7.so:vendor/lib/libvp8dec_sa.ca7.so
+lib/libvp8enc_sa.ca7.so:vendor/lib/libvp8enc_sa.ca7.so
+lib/libvp9dec_sa.ca7.so:vendor/lib/libvp9dec_sa.ca7.so
+lib64/libJpgEncPipe.so:vendor/lib64/libJpgEncPipe.so
+lib64/libMtkOmxCore.so:vendor/lib64/libMtkOmxCore.so
+lib64/libcvsd_mtk.so:vendor/lib64/libcvsd_mtk.so
+lib64/libmtk_mmutils.so:vendor/lib64/libmtk_mmutils.so
+lib64/libmtkjpeg.so:vendor/lib64/libmtkjpeg.so
+lib64/libstagefrighthw.so:vendor/lib64/libstagefrighthw.so
+lib64/libvcodec_utility.so:vendor/lib64/libvcodec_utility.so
+
 # NVRAM
 bin/nvram_daemon:vendor/bin/nvram_daemon
 lib/libcustom_nvram.so:vendor/lib/libcustom_nvram.so
