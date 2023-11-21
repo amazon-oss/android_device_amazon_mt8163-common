@@ -62,6 +62,10 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt8163
 
+# SDK
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /system/bin/mediaserver=23
+
 # SEPolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 include device/amazon/sepolicy/SEPolicy.mk
