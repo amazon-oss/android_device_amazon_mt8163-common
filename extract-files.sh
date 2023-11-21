@@ -61,8 +61,44 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        bin/ged_srv)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
         lib*/egl/libGLES_mali.so)
             patchelf --add-needed "libutilscallstack.so" "${2}"
+            ;;
+        lib*/hw/hwcomposer.mt8163.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libGdmaScalerPipe.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libMtkOmxAIVPlayer.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libMtkOmxVdecEx.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libMtkOmxVenc.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libSwJpgCodec.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libaudiostream.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libged.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libgpu_aux.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libmtk_mmutils.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libvcodecdrv.so)
+            patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
     esac
 }
