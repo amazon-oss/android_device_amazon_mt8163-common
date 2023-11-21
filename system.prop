@@ -7,6 +7,7 @@ ro.hardware.gralloc=mt8163.mali
 ro.opengles.version=196609
 
 # Media (OMX)
+debug.fdsan=warn_once
 debug.stagefright.ccodec=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
