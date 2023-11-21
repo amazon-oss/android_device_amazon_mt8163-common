@@ -10,5 +10,8 @@ ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 ro.hardware.gralloc=mt8163.mali
 ro.opengles.version=196609
 
+# Media (OMX)
+debug.stagefright.ccodec=0
+
 # SurfaceFlinger
 ro.sf.hwrotation=0
