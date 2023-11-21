@@ -34,6 +34,11 @@ lib64/libmtkshifter.so:vendor/lib64/libmtkshifter.so|ba4a029a3c56056b44dbb935fb8
 lib64/libsmartvolume.so:vendor/lib64/libsmartvolume.so|7267b4f9a5d0a34ae2c0d4cd8a016a5c99119985
 lib64/libspeech_enh_lib.so:vendor/lib64/libspeech_enh_lib.so|d95c8e5465445a19c230d3c4a0e2c8474d036f5b
 
+# Bluetooth
+bin/autobt:vendor/bin/autobt
+lib/libmsbc_mtk.so:vendor/lib/libmsbc_mtk.so
+lib64/libmsbc_mtk.so:vendor/lib64/libmsbc_mtk.so
+
 # Connectivity
 bin/6620_launcher:vendor/bin/6620_launcher
 bin/6620_wmt_concurrency:bin/6620_wmt_concurrency
@@ -85,12 +90,12 @@ lib64/libtz_uree.so:vendor/lib64/libtz_uree.so
 bin/nvram_daemon:vendor/bin/nvram_daemon
 lib/libcustom_nvram.so:vendor/lib/libcustom_nvram.so
 lib/libfile_op.so:vendor/lib/libfile_op.so
-lib/libnvram.so:vendor/lib/libnvram.so
+-lib/libnvram.so:vendor/lib/libnvram.so
 lib/libnvram_daemon_callback.so:vendor/lib/libnvram_daemon_callback.so
 lib/libnvram_platform.so:vendor/lib/libnvram_platform.so
 lib/libnvramagentclient.so:vendor/lib/libnvramagentclient.so
 lib64/libcustom_nvram.so:vendor/lib64/libcustom_nvram.so
-lib64/libnvram.so:vendor/lib64/libnvram.so
+-lib64/libnvram.so:vendor/lib64/libnvram.so
 lib64/libnvram_platform.so:vendor/lib64/libnvram_platform.so
 lib64/libfile_op.so:vendor/lib64/libfile_op.so
 
