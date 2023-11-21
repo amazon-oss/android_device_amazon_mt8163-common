@@ -171,6 +171,12 @@ lib64/libcustom_nvram.so
 lib64/libnvram_platform.so
 lib64/libfile_op.so
 
+# Sensors
+lib/hw/sensors.mt8163.so:lib/libsensors.mt8163.so
+lib/libhwm.so
+lib64/hw/sensors.mt8163.so:lib64/libsensors.mt8163.so
+lib64/libhwm.so
+
 # Thermal
 bin/thermal_manager
 etc/.tp/.ht120.mtc
