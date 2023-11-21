@@ -31,6 +31,13 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl:32 \
     android.hardware.bluetooth@1.0-service
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl-legacy
+
+PRODUCT_PACKAGES += \
+    libcam.client
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
