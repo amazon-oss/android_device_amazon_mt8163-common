@@ -115,6 +115,11 @@ vendor/lib/libwvm.so
 vendor/lib/mediadrm/libplayreadydrmplugin.so
 vendor/lib64/liboemcrypto.so
 
+# IDME
+bin/devicetype_service:vendor/bin/devicetype_service
+bin/idme:vendor/bin/idme
+bin/wipe_fos_flags:vendor/bin/wipe_fos_flags
+
 # Keymaster
 lib/hw/keystore.mt8163.so:vendor/lib/hw/keystore.mt8163.so
 lib/libtz_uree.so:vendor/lib/libtz_uree.so
