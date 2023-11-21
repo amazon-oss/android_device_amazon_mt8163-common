@@ -11,6 +11,7 @@ ro.opengles.version=196609
 
 # Media (OMX)
 debug.stagefright.ccodec=0
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # SurfaceFlinger
 ro.sf.hwrotation=0
