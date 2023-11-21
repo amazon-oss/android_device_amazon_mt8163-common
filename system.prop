@@ -9,6 +9,10 @@ ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 ro.hardware.gralloc=mt8163.mali
 ro.opengles.version=196609
 
+# DRM
+drm.service.enabled=true
+mtk_in_house_tee_support=true
+
 # Media (OMX)
 debug.fdsan=warn_once
 debug.stagefright.ccodec=0
