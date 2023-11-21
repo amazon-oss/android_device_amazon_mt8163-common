@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcam.client
 
+# Characteristics
+PRODUCT_CHARACTERISTICS := tablet
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
