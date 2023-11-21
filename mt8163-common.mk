@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk \
     libbt-vendor
 
+# Bootanimation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy
