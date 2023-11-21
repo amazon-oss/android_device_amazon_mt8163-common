@@ -356,3 +356,6 @@ service amzn_dha_hmac /system/bin/amzn_dha_hmac
     group system
     oneshot
     disabled
+
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
