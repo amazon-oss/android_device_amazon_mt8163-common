@@ -89,6 +89,39 @@ lib64/libion_mtk.so
 lib64/libm4u.so
 lib64/libstlport.so
 
+# DRM
+bin/amzn_dha_hmac
+bin/amzn_dha_tool
+bin/amzn_drmprov_check
+bin/amzn_drmprov_tool
+bin/kisd
+bin/rpmb_svc
+lib/hw/amzn_dha.mt8163.so
+lib/hw/amzn_drmprov.mt8163.so
+lib/lib_uree_mtk_crypto.so
+lib/lib_uree_mtk_modular_drm.so
+lib/lib_uree_mtk_video_secure_al.so
+lib/libdrmmtkutil.so
+lib/libdrmmtkwhitelist.so
+lib/libdrmplayreadydecryptor.so
+lib/libplayready.so
+lib/liburee_meta_drmkeyinstall_v2.so
+lib64/hw/amzn_dha.mt8163.so
+lib64/hw/amzn_drmprov.mt8163.so
+lib64/lib_uree_mtk_crypto.so
+lib64/lib_uree_mtk_modular_drm.so
+lib64/lib_uree_mtk_video_secure_al.so
+lib64/libdrmmtkutil.so
+lib64/libdrmmtkwhitelist.so
+lib64/liburee_meta_drmkeyinstall_v2.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/libWVStreamControlAPI_L1.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libwvdrm_L1.so
+vendor/lib/libwvm.so
+vendor/lib/mediadrm/libplayreadydrmplugin.so
+vendor/lib64/liboemcrypto.so
+
 # Keymaster
 lib/hw/keystore.mt8163.so
 lib/libtz_uree.so
