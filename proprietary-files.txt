@@ -171,6 +171,20 @@ lib64/libcustom_nvram.so
 lib64/libnvram_platform.so
 lib64/libfile_op.so
 
+# Thermal
+bin/thermal_manager
+etc/.tp/.ht120.mtc
+etc/.tp/thermal.conf
+etc/.tp/thermal.off.conf
+etc/.tp/thermal.policy.conf
+lib/hw/thermal.mt8163.so
+lib/libmtcloader.so
+lib/libmtk_drvb.so
+lib/libthermalservice.so
+lib64/hw/thermal.mt8163.so
+lib64/libmtk_drvb.so
+lib64/libthermalservice.so
+
 # Wi-Fi - from full_px556_kw-user 10 QP1A.190711.020 1585833944 release-keys
 vendor/bin/hostapd_cli|2d267f7e8c00ef0d7ee6c683aa400cb176fcb25c
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|11de651333ef53a2d426fce3bb6d6d95544c27eb
