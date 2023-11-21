@@ -66,6 +66,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt8163
 
 # SEPolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 include device/amazon/sepolicy/SEPolicy.mk
 
 # Verified Boot
