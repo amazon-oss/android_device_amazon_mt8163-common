@@ -32,6 +32,9 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+# Camera
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+
 # Filesystems
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE   := ext4
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE    := ext4

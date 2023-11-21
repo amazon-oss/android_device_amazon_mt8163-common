@@ -47,6 +47,13 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk \
     libbt-vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl-legacy
+
+PRODUCT_PACKAGES += \
+    libcam.client
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
