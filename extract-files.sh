@@ -70,6 +70,9 @@ function blob_fixup() {
         lib*/hw/audio.primary.mt8163.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
+        lib*/hw/gralloc.mt8163.mali.so)
+            patchelf --add-needed "libmemset_shim.so" "${2}"
+            ;;
         lib*/hw/hwcomposer.mt8163.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
