@@ -138,6 +138,7 @@ function blob_fixup() {
             ;;
         lib*/libaal.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
         lib*/libaal_cust.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -150,6 +151,7 @@ function blob_fixup() {
             ;;
         lib*/libaudiostream.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         lib*/libaudiostream_jni.so)
@@ -176,6 +178,9 @@ function blob_fixup() {
         lib*/libdrmmtkwhitelist.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        lib*/libdrmmtkutil.so)
+            patchelf --add-needed "libbinder_shim.so" "${2}"
+            ;;
         lib*/libcam1client.so)
             patchelf --add-needed "libui_shim.so" "${2}"
             ;;
@@ -193,6 +198,9 @@ function blob_fixup() {
             ;;
         lib*/libnvram_daemon_callback.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        lib*/libnvramagentclient.so)
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
         lib*/libsensors.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
