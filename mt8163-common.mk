@@ -188,7 +188,8 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libcutils_shim \
-    libmemset_shim
+    libmemset_shim \
+    libui_shim
 
 PRODUCT_PACKAGES += \
     libamazonlog

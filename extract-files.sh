@@ -96,6 +96,7 @@ function blob_fixup() {
         lib*/hw/hwcomposer.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         lib*/hw/memtrack.mt8163.so)
@@ -123,6 +124,7 @@ function blob_fixup() {
         lib*/libMtkOmxVdecEx.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         lib*/libMtkOmxVenc.so)
@@ -175,6 +177,9 @@ function blob_fixup() {
         lib*/libdrmmtkwhitelist.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        lib*/libcam1client.so)
+            patchelf --add-needed "libui_shim.so" "${2}"
+            ;;
         lib*/libgpu_aux.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
@@ -185,6 +190,7 @@ function blob_fixup() {
         lib*/libmtk_mmutils.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             ;;
         lib*/libnvram_daemon_callback.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
