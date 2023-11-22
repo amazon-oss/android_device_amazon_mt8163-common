@@ -188,7 +188,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcutils_shim
+    libcutils_shim \
+    libmemset_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
