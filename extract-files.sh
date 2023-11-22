@@ -88,6 +88,9 @@ function blob_fixup() {
         lib*/hw/audio.primary.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        lib*/hw/camera.primary.mt8163.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
         lib*/hw/gralloc.mt8163.mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libmemset_shim.so" "${2}"
@@ -110,6 +113,18 @@ function blob_fixup() {
         lib*/hw/keystore.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        lib*/lib3a.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libGdmaScalerPipe.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libJpgDecPipe.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libJpgEncPipe.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
         lib*/libMtkOmxAIVPlayer.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
@@ -130,6 +145,9 @@ function blob_fixup() {
         lib*/libMtkOmxVenc.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libSwJpgCodec.so)
+            patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/lib_uree_mtk_modular_drm.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -177,21 +195,127 @@ function blob_fixup() {
         lib*/libbluetoothem_mtk.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        lib*/libbwc.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.camadapter.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.campipe.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.camshot.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.device1.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.device3.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.exif.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.exif.v3.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.hal3a.v3.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.halsensor.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.iopipe.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.iopipe_FrmB.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.metadata.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.metadataprovider.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.paramsmgr.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcamdrv.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.sdkclient.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam.utils.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam1_utils.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam1client.so)
+            patchelf --add-needed "libui_shim.so" "${2}"
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam3_app.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam3_hwnode.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam3_hwpipeline.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam3_pipeline.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam_platform.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcam_utils.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcamalgo.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libcameracustom.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libdpframework.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
         lib*/libdrmmtkwhitelist.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         lib*/libdrmmtkutil.so)
             patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
-        lib*/libcam1client.so)
-            patchelf --add-needed "libui_shim.so" "${2}"
+        lib*/libfeatureio.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libfeatureiodrv.so)
+            patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libgpu_aux.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
+        lib*/libimageio.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libimageio_FrmB.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libimageio_plat_drv.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
+        lib*/libimageio_plat_drv_FrmB.so)
+            patchelf --add-needed "libxlog.so" "${2}"
+            ;;
         lib*/libm4u.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        lib*/libmmsdkservice.so)
+            patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libmtk_mmutils.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -203,6 +327,9 @@ function blob_fixup() {
             ;;
         lib*/libnvramagentclient.so)
             patchelf --add-needed "libbinder_shim.so" "${2}"
+            ;;
+        lib*/libpq_prot.so)
+            patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libsensors.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
