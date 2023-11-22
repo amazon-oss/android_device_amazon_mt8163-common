@@ -160,6 +160,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libbinder_shim \
     libcutils_shim \
     libmemset_shim \
     libui_shim
