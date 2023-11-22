@@ -162,6 +162,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbinder_shim \
     libcutils_shim \
+    libgui_shim \
     libmemset_shim \
     libui_shim
 
