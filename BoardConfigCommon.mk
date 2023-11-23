@@ -80,6 +80,7 @@ BOARD_AVB_ENABLE := false
 
 # Vintf
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
