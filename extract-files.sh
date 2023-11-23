@@ -150,6 +150,7 @@ function blob_fixup() {
         lib*/libMtkOmxVenc.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             ;;
         lib*/libSwJpgCodec.so)
             patchelf --add-needed "libxlog.so" "${2}"
@@ -283,6 +284,7 @@ function blob_fixup() {
             ;;
         lib*/libcam_utils.so)
             patchelf --add-needed "libutilscallstack.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libcamalgo.so)
