@@ -170,6 +170,7 @@ function blob_fixup() {
             ;;
         lib*/libaudiocomponentengine.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libutilscallstack.so" "${2}"
             ;;
         lib*/libaudiocustparam.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -252,6 +253,7 @@ function blob_fixup() {
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libcam.utils.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libcam.utils.sensorlistener.so)
@@ -280,6 +282,7 @@ function blob_fixup() {
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libcam_utils.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         lib*/libcamalgo.so)
