@@ -181,7 +181,6 @@ etc/firmware/WIFI_RAM_CODE_8163
 etc/firmware/WMT_SOC.cfg
 
 # Display
-bin/aal
 bin/ged_srv
 bin/guiext-server
 lib/egl/egl.cfg
@@ -189,8 +188,6 @@ lib/egl/libGLES_mali.so
 lib/hw/gralloc.mt8163.mali.so
 lib/hw/hwcomposer.mt8163.so
 lib/hw/memtrack.mt8163.so
-lib/libaal.so
-lib/libaal_cust.so
 lib/libged.so
 lib/libgpu_aux.so
 lib/libm4u.so
@@ -199,8 +196,6 @@ lib64/egl/libGLES_mali.so
 lib64/hw/gralloc.mt8163.mali.so
 lib64/hw/hwcomposer.mt8163.so
 lib64/hw/memtrack.mt8163.so
-lib64/libaal.so
-lib64/libaal_cust.so
 lib64/libged.so
 lib64/libgpu_aux.so
 lib64/libm4u.so
