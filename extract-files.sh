@@ -67,9 +67,6 @@ function blob_fixup() {
         bin/6620_launcher)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        bin/bin/aal)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
         bin/ged_srv)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
@@ -158,14 +155,6 @@ function blob_fixup() {
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         lib*/lib_uree_mtk_video_secure_al.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib*/libaal.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            patchelf --add-needed "libbinder_shim.so" "${2}"
-            patchelf --add-needed "libgui_shim.so" "${2}"
-            ;;
-        lib*/libaal_cust.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         lib*/libaudiocomponentengine.so)
