@@ -190,16 +190,22 @@ lib/hw/hwcomposer.mt8163.so
 lib/hw/memtrack.mt8163.so
 lib/libged.so
 lib/libgpu_aux.so
+lib/libgralloc_extra.so
+lib/libgui_ext.so
 lib/libm4u.so
 lib/libstlport.so
+lib/libui_ext.so
 lib64/egl/libGLES_mali.so
 lib64/hw/gralloc.mt8163.mali.so
 lib64/hw/hwcomposer.mt8163.so
 lib64/hw/memtrack.mt8163.so
 lib64/libged.so
 lib64/libgpu_aux.so
+lib64/libgralloc_extra.so
+lib64/libgui_ext.so
 lib64/libm4u.so
 lib64/libstlport.so
+lib64/libui_ext.so
 
 # DRM
 bin/amzn_dha_hmac

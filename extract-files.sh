@@ -293,6 +293,16 @@ function blob_fixup() {
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
+        lib*/libgralloc_extra.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib*/libgui_ext.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libbinder_shim.so" "${2}"
+            patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libgui_shim.so" "${2}"
+            ;;
         lib*/libimageio.so)
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
@@ -335,6 +345,11 @@ function blob_fixup() {
             ;;
         lib*/libtz_uree.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        lib*/libui_ext.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
+            sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         lib*/libvcodecdrv.so)
             patchelf --add-needed "libamazonlog.so" "${2}"

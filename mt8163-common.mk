@@ -66,10 +66,7 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 PRODUCT_PACKAGES += \
-    libion \
-    libgralloc_extra \
-    libgui_ext \
-    libui_ext
+    libion
 
 # DRM
 PRODUCT_PACKAGES += \
