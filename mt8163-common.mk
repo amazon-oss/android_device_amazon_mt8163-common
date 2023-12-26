@@ -177,6 +177,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libui-v28
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0 \

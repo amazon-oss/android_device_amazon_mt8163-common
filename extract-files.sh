@@ -81,6 +81,7 @@ function blob_fixup() {
         lib*/egl/libGLES_mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libutilscallstack.so" "${2}"
+            patchelf --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;
         lib*/hw/audio.primary.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -91,11 +92,12 @@ function blob_fixup() {
         lib*/hw/gralloc.mt8163.mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libmemset_shim.so" "${2}"
+            patchelf --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;
         lib*/hw/hwcomposer.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
-            patchelf --add-needed "libui_shim.so" "${2}"
+            patchelf --replace-needed "libui.so" "libui-v28.so" "${2}"
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         lib*/hw/memtrack.mt8163.so)
