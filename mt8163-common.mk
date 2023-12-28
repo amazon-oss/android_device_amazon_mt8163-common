@@ -161,10 +161,12 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libbinder_shim \
+    libcrypto_shim \
     libcutils_shim \
     libgui_shim \
     libmemset_shim \
-    libui_shim
+    libui_shim \
+    libssl_shim
 
 PRODUCT_PACKAGES += \
     libamazonlog \

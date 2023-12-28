@@ -60,6 +60,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        bin/amzn_dha_hmac|bin/amzn_dha_tool)
+            patchelf --add-needed "libcrypto_shim.so" "${2}"
+            patchelf --add-needed "libssl_shim.so" "${2}"
+            ;;
         bin/6620_launcher)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
