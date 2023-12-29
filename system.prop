@@ -22,4 +22,5 @@ debug.stagefright.omx_default_rank.sw-audio=1
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # SurfaceFlinger
+debug.sf.disable_backpressure=1
 ro.sf.hwrotation=0
