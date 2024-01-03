@@ -86,6 +86,7 @@ function blob_fixup() {
         vendor/lib*/egl/libGLES_mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libutilscallstack.so" "${2}"
+            patchelf --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;
         vendor/lib*/hw/amzn_dha.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
