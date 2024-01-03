@@ -86,6 +86,9 @@ PRODUCT_PACKAGES += \
     libgui_ext \
     libui_ext
 
+PRODUCT_PACKAGES += \
+    libui-v28
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
