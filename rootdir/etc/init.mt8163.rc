@@ -26,9 +26,6 @@ on init
     # Enable ARMv8 deprecated instruction hooks
     write /proc/sys/abi/swp 1
 
-    # Disable AAL
-    setprop persist.sys.aal.function 0
-
 on fs
     # Mount everything
     symlink /dev/block/platform/soc/11230000.mmc /dev/block/platform/mtk-msdc.0
@@ -314,11 +311,6 @@ service nvram_daemon /system/bin/nvram_daemon
     user root
     group system
     oneshot
-
-service aal /system/bin/aal
-    class main
-    user system
-    group system graphics
 
 service thermal_manager /system/bin/thermal_manager
     class main
