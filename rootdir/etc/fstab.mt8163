@@ -9,4 +9,4 @@
 /devices/soc/11240000.mmc*		auto		auto		defaults		voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/mt_usb*               auto            auto            defaults                voldmanaged=usbotg:auto
 
-/dev/block/zram0                        /swap_zram0     swap            defaults                wait,zramsize=392216000,max_comp_streams=4
+/dev/block/zram0                        /swap_zram0     swap            defaults                wait,zramsize=75%,max_comp_streams=4
