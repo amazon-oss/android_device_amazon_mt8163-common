@@ -39,5 +39,5 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000
 service.sf.prime_shader_cache=0
 
 # Zygote
-pm.dexopt.downgrade_after_inactive_days=10
+pm.dexopt.downgrade_after_inactive_days=7
 pm.dexopt.shared=quicken
