@@ -6,6 +6,9 @@ ro.hardware.audio.primary=amazon_wrapper
 # Bluetooth
 ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 
+# Dalvik
+dalvik.vm.madvise-random=true
+
 # Display
 debug.hwui.use_buffer_age=false
 ro.hardware.gralloc=mt8163.mali
