@@ -228,6 +228,9 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     libwifi-system-iface
 
+PRODUCT_PACKAGES += \
+    libcompiler_rt-v29
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 

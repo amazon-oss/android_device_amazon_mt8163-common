@@ -82,6 +82,15 @@ function blob_fixup() {
         bin/wmt_loader)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek)
+            patchelf --add-needed "libcompiler_rt-v29.so" "${2}"
+            ;;
+        vendor/bin/hw/hostapd)
+            patchelf --add-needed "libcompiler_rt-v29.so" "${2}"
+            ;;
+        vendor/bin/hw/wpa_supplicant)
+            patchelf --add-needed "libcompiler_rt-v29.so" "${2}"
+            ;;
         lib*/egl/libGLES_mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libutilscallstack.so" "${2}"
