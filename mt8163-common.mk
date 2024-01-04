@@ -197,6 +197,7 @@ PRODUCT_PACKAGES += \
     libmemset_shim \
     libpthread_shim \
     libui_shim \
+    libutils_shim \
     libssl_shim
 
 PRODUCT_PACKAGES += \
