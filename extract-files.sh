@@ -93,6 +93,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/hw/audio.primary_amazon.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libcompiler_rt.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         vendor/lib*/hw/camera.primary.mt8163.so)
