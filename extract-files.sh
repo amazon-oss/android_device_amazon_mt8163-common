@@ -259,6 +259,7 @@ function blob_fixup() {
             ;;
         lib*/libcam.utils.sensorlistener.so)
             patchelf --add-needed "libpthread_shim.so" "${2}"
+            patchelf --add-needed "libsensor.so" "${2}"
             ;;
         lib*/libcam1_utils.so)
             patchelf --add-needed "libxlog.so" "${2}"
