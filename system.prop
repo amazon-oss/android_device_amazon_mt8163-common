@@ -2,6 +2,9 @@
 ro.audio.hw_vol_devices=0x0C
 ro.audio.monitorRotation=true
 
+# Bluetooth
+ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
+
 # Display
 ro.hardware.gralloc=mt8163.mali
 ro.opengles.version=196609
