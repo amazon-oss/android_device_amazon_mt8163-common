@@ -359,3 +359,8 @@ service amzn_dha_hmac /vendor/bin/amzn_dha_hmac
     group system
     oneshot
     disabled
+
+on property:sys.conn_macs.ready=1
+    # Bluetooth
+    chown bluetooth bluetooth /data/vendor/bluedroid/macbt
+    chmod 0666 /data/vendor/bluedroid/macbt
