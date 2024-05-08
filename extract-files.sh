@@ -63,6 +63,7 @@ function blob_fixup() {
         vendor/bin/6620_launcher)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libbinder_shim.so" "${2}"
+            sed -i 's|system/etc|vendor/etc|g' "${2}"
             ;;
         vendor/bin/amzn_dha_hmac|vendor/bin/amzn_dha_tool)
             patchelf --add-needed "libcrypto_shim.so" "${2}"
@@ -79,6 +80,9 @@ function blob_fixup() {
             ;;
         vendor/bin/rpmb_svc)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/bin/thermal_manager)
+            sed -i 's|system/lib|vendor/lib|g' "${2}"
             ;;
         vendor/bin/wmt_loader)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -104,6 +108,7 @@ function blob_fixup() {
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcompiler_rt.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            sed -i 's|system/etc|vendor/etc|g' "${2}"
             ;;
         vendor/lib*/hw/camera.primary.mt8163.so)
             patchelf --add-needed "libxlog.so" "${2}"
@@ -149,6 +154,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/libMtkOmxCore.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            sed -i 's|system/etc|vendor/etc|g' "${2}"
             ;;
         vendor/lib*/libMtkOmxMp3Dec.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -163,6 +169,7 @@ function blob_fixup() {
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             patchelf --add-needed "libui_shim.so" "${2}"
+            sed -i 's|system/lib|vendor/lib|g' "${2}"
             ;;
         vendor/lib*/libSwJpgCodec.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
@@ -376,6 +383,8 @@ function blob_fixup() {
             ;;
         vendor/lib*/libvcodecdrv.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            sed -i 's|system/etc|vendor/etc|g' "${2}"
+            sed -i 's|system/lib|vendor/lib|g' "${2}"
             ;;
     esac
 }
