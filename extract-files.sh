@@ -196,6 +196,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/libcam.camadapter.so)
             patchelf --add-needed "libxlog.so" "${2}"
+            patchelf --replace-needed "libskia.so" "libhwui.so" "${2}"
             ;;
         vendor/lib*/libcam.campipe.so)
             patchelf --add-needed "libxlog.so" "${2}"
