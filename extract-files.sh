@@ -98,6 +98,7 @@ function blob_fixup() {
         vendor/lib*/hw/hwcomposer.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         vendor/lib*/hw/keystore.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -124,6 +125,7 @@ function blob_fixup() {
         vendor/lib*/libMtkOmxVdecEx.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         vendor/lib*/libMtkOmxVenc.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
