@@ -117,6 +117,7 @@ function blob_fixup() {
         vendor/lib*/libMtkOmxAIVPlayer.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libgui_shim.so" "${2}"
             ;;
         vendor/lib*/libMtkOmxCore.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -147,6 +148,7 @@ function blob_fixup() {
         vendor/lib*/libaal.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libbinder_shim.so" "${2}"
+            patchelf --add-needed "libgui_shim.so" "${2}"
             ;;
         vendor/lib*/libaal_cust.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
