@@ -193,6 +193,7 @@ PRODUCT_PACKAGES += \
     libcutils_shim \
     libgui_shim \
     libmemset_shim \
+    libpthread_shim \
     libui_shim \
     libssl_shim
 
