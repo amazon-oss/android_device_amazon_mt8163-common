@@ -98,6 +98,7 @@ function blob_fixup() {
         vendor/lib*/hw/hwcomposer.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         vendor/lib*/hw/keystore.mt8163.so)
@@ -125,11 +126,13 @@ function blob_fixup() {
         vendor/lib*/libMtkOmxVdecEx.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         vendor/lib*/libMtkOmxVenc.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             ;;
         vendor/lib*/libSwJpgCodec.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
@@ -159,6 +162,12 @@ function blob_fixup() {
         vendor/lib*/libaudiostream_jni.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        vendor/lib*/libcam1client.so)
+            patchelf --add-needed "libui_shim.so" "${2}"
+            ;;
+        vendor/lib*/libcam_utils.so)
+            patchelf --add-needed "libui_shim.so" "${2}"
+            ;;
         vendor/lib*/libdrmmtkwhitelist.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
@@ -175,6 +184,7 @@ function blob_fixup() {
         vendor/lib*/libmtk_mmutils.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             ;;
         vendor/lib*/libnvram_daemon_callback.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
