@@ -191,6 +191,9 @@ PRODUCT_PACKAGES += \
     libcutils_shim \
     libmemset_shim
 
+PRODUCT_PACKAGES += \
+    libamazonlog
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

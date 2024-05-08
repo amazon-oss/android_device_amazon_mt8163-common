@@ -60,44 +60,134 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/6620_launcher)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/bin/bin/aal)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
         vendor/bin/ged_srv)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
+        vendor/bin/guiext-server)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/bin/kisd)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/bin/rpmb_svc)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/bin/wmt_loader)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/egl/libGLES_mali.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/hw/amzn_dha.mt8163.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
         vendor/lib*/hw/audio.primary_amazon.mt8163.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         vendor/lib*/hw/gralloc.mt8163.mali.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libmemset_shim.so" "${2}"
             ;;
         vendor/lib*/hw/hwcomposer.mt8163.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        vendor/lib*/hw/keystore.mt8163.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/hw/memtrack.mt8163.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/hw/thermal.mt8163.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         vendor/lib*/libGdmaScalerPipe.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         vendor/lib*/libMtkOmxAIVPlayer.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
+        vendor/lib*/libMtkOmxCore.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libMtkOmxMp3Dec.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
         vendor/lib*/libMtkOmxVdecEx.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         vendor/lib*/libMtkOmxVenc.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         vendor/lib*/libSwJpgCodec.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
+        vendor/lib*/lib_uree_mtk_modular_drm.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/lib_uree_mtk_video_secure_al.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libaal.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libaal_cust.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libaudiocomponentengine.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libaudiocustparam.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
         vendor/lib*/libaudiostream.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        vendor/lib*/libaudiostream_jni.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libdrmmtkwhitelist.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         vendor/lib*/libged.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         vendor/lib*/libgpu_aux.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
+        vendor/lib*/libm4u.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
         vendor/lib*/libmtk_mmutils.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        vendor/lib*/libnvram_daemon_callback.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libsensors.mt8163.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libsmartvolume.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libthermalservice.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libtz_uree.so)
+            patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         vendor/lib*/libvcodecdrv.so)
             patchelf --add-needed "libcutils_shim.so" "${2}"
