@@ -174,7 +174,6 @@ etc/firmware/WIFI_RAM_CODE_8163:vendor/etc/firmware/WIFI_RAM_CODE_8163
 etc/firmware/WMT_SOC.cfg:vendor/etc/firmware/WMT_SOC.cfg
 
 # Display
-bin/aal:vendor/bin/aal
 bin/ged_srv:vendor/bin/ged_srv
 bin/guiext-server:vendor/bin/guiext-server
 lib/egl/egl.cfg:vendor/lib/egl/egl.cfg
@@ -182,8 +181,6 @@ lib/egl/libGLES_mali.so:vendor/lib/egl/libGLES_mali.so
 lib/hw/gralloc.mt8163.mali.so:vendor/lib/hw/gralloc.mt8163.mali.so
 lib/hw/hwcomposer.mt8163.so:vendor/lib/hw/hwcomposer.mt8163.so
 lib/hw/memtrack.mt8163.so:vendor/lib/hw/memtrack.mt8163.so
-lib/libaal.so:vendor/lib/libaal.so
-lib/libaal_cust.so:vendor/lib/libaal_cust.so
 lib/libged.so:vendor/lib/libged.so
 lib/libgpu_aux.so:vendor/lib/libgpu_aux.so
 lib/libm4u.so:vendor/lib/libm4u.so
@@ -192,8 +189,6 @@ lib64/egl/libGLES_mali.so:vendor/lib64/egl/libGLES_mali.so
 lib64/hw/gralloc.mt8163.mali.so:vendor/lib64/hw/gralloc.mt8163.mali.so
 lib64/hw/hwcomposer.mt8163.so:vendor/lib64/hw/hwcomposer.mt8163.so
 lib64/hw/memtrack.mt8163.so:vendor/lib64/hw/memtrack.mt8163.so
-lib64/libaal.so:vendor/lib64/libaal.so
-lib64/libaal_cust.so:vendor/lib64/libaal_cust.so
 lib64/libged.so:vendor/lib64/libged.so
 lib64/libgpu_aux.so:vendor/lib64/libgpu_aux.so
 lib64/libm4u.so:vendor/lib64/libm4u.so

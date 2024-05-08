@@ -64,9 +64,6 @@ function blob_fixup() {
             patchelf --add-needed "libamazonlog.so" "${2}"
             patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
-        vendor/bin/bin/aal)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
         vendor/bin/amzn_dha_hmac|vendor/bin/amzn_dha_tool)
             patchelf --add-needed "libcrypto_shim.so" "${2}"
             patchelf --add-needed "libssl_shim.so" "${2}"
@@ -166,14 +163,6 @@ function blob_fixup() {
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         vendor/lib*/lib_uree_mtk_video_secure_al.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        vendor/lib*/libaal.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            patchelf --add-needed "libbinder_shim.so" "${2}"
-            patchelf --add-needed "libgui_shim.so" "${2}"
-            ;;
-        vendor/lib*/libaal_cust.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         vendor/lib*/libaudiocomponentengine.so)
