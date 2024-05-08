@@ -88,6 +88,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/egl/libGLES_mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libutilscallstack.so" "${2}"
             ;;
         vendor/lib*/hw/amzn_dha.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -177,6 +178,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/libaudiocomponentengine.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libutilscallstack.so" "${2}"
             ;;
         vendor/lib*/libaudiocustparam.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -241,6 +243,7 @@ function blob_fixup() {
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         vendor/lib*/libcam.utils.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         vendor/lib*/libcam.utils.sensorlistener.so)
@@ -270,6 +273,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/libcam_utils.so)
             patchelf --add-needed "libui_shim.so" "${2}"
+            patchelf --add-needed "libutilscallstack.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         vendor/lib*/libcamalgo.so)
