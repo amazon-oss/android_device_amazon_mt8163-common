@@ -67,6 +67,10 @@ function blob_fixup() {
         vendor/bin/bin/aal)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        vendor/bin/amzn_dha_hmac|vendor/bin/amzn_dha_tool)
+            patchelf --add-needed "libcrypto_shim.so" "${2}"
+            patchelf --add-needed "libssl_shim.so" "${2}"
+            ;;
         vendor/bin/ged_srv)
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
