@@ -195,7 +195,8 @@ PRODUCT_PACKAGES += \
     libui_shim
 
 PRODUCT_PACKAGES += \
-    libamazonlog
+    libamazonlog \
+    libxlog
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
