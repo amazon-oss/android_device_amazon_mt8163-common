@@ -36,7 +36,7 @@ namespace.default.links = platform
 namespace.default.link.platform.shared_libs = libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libc.so:libcgrouprc.so:libclang_rt.asan-aarch64-android.so:libclang_rt.asan-arm-android.so:libclang_rt.hwasan-aarch64-android.so:libclang_rt.asan-i686-android.so:libclang_rt.asan-x86_64-android.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libsync.so:libvndksupport.so:libdl_android.so:libvulkan.so:libbinder_ndk.so
 
 # Below lines are required for shims to work without breaking swcodec APEX.
-namespace.default.link.platform.shared_libs += libcutils_shim.so:libmemset_shim.so:libamazonlog.so:libui_shim.so:libbinder_shim.so:libgui_shim.so:libxlog.so:libcrypto_shim.so:libssl_shim.so:libpthread_shim.so
+namespace.default.link.platform.shared_libs += libcutils_shim.so:libmemset_shim.so:libamazonlog.so:libui_shim.so:libbinder_shim.so:libgui_shim.so:libxlog.so:libcrypto_shim.so:libssl_shim.so:libpthread_shim.so:libutils_shim.so
 
 ###############################################################################
 # "platform" namespace

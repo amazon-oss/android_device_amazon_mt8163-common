@@ -198,7 +198,8 @@ PRODUCT_PACKAGES += \
     libmemset_shim \
     libpthread_shim \
     libui_shim \
-    libssl_shim
+    libssl_shim \
+    libutils_shim
 
 PRODUCT_PACKAGES += \
     libamazonlog \

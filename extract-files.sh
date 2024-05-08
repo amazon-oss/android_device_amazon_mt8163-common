@@ -192,17 +192,23 @@ function blob_fixup() {
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         vendor/lib*/libbwc.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam.camadapter.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
             patchelf --replace-needed "libskia.so" "libhwui.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam.campipe.so)
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         vendor/lib*/libcam.camshot.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam.device1.so)
             patchelf --add-needed "libxlog.so" "${2}"
@@ -241,7 +247,9 @@ function blob_fixup() {
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         vendor/lib*/libcam.sdkclient.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam.utils.so)
             patchelf --add-needed "libutilscallstack.so" "${2}"
@@ -250,25 +258,41 @@ function blob_fixup() {
         vendor/lib*/libcam.utils.sensorlistener.so)
             patchelf --add-needed "libpthread_shim.so" "${2}"
             patchelf --add-needed "libsensor.so" "${2}"
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam1_utils.so)
             patchelf --add-needed "libxlog.so" "${2}"
             ;;
         vendor/lib*/libcam1client.so)
             patchelf --add-needed "libui_shim.so" "${2}"
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam3_app.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam3_hwnode.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam3_hwpipeline.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam3_pipeline.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
             patchelf --add-needed "libxlog.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
+            ;;
+        vendor/lib*/libcam3_utils.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            sed -i 's/_ZN7android6Thread3run/_ZN7android6Custom3run/g' "${2}"
             ;;
         vendor/lib*/libcam_platform.so)
             patchelf --add-needed "libxlog.so" "${2}"
