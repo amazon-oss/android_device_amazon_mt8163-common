@@ -1,6 +1,7 @@
 # Audio
 ro.audio.hw_vol_devices=0x0C
 ro.audio.monitorRotation=true
+ro.hardware.audio.primary=amazon_wrapper
 
 # Display
 ro.hardware.gralloc=mt8163.mali

@@ -1,7 +1,7 @@
 # Unpinned blobs from douglas-user 5.1.1 LVY48F 50.6.5.9_user_659664620 release-keys
 
 # Audio - from full_giza-user 5.1.1 LVY48F 49.6.2.6_user_626536720 release-keys
-lib/hw/audio.primary.mt8163.so:vendor/lib/hw/audio.primary.mt8163.so|04d4c371b4cf6ef727b4083b38f179c5ffc92cfd
+lib/hw/audio.primary.mt8163.so:vendor/lib/hw/audio.primary_amazon.mt8163.so|04d4c371b4cf6ef727b4083b38f179c5ffc92cfd
 lib/libaudiocompensationfilter.so:vendor/lib/libaudiocompensationfilter.so|4b3f64bf6a408f6f2470d747dd518eadc5fae502
 lib/libaudiocomponentengine.so:vendor/lib/libaudiocomponentengine.so|88de6f90ed60dbf6494fa31a1b9d75a264c74337
 lib/libaudiocustparam.so:vendor/lib/libaudiocustparam.so|22c1d9282fd415f82d1b7e39efdfbbcc8906be92
@@ -17,7 +17,7 @@ lib/libmtkplayer.so:vendor/lib/libmtkplayer.so|1711b620b974788d2088266d18fd93710
 lib/libmtkshifter.so:vendor/lib/libmtkshifter.so|1a9e2df97e96cd0aab8f1fc59d03eaa663a32c2c
 lib/libsmartvolume.so:vendor/lib/libsmartvolume.so|6e05de55ca136c2cb76d225b7da0fb141be15156
 lib/libspeech_enh_lib.so:vendor/lib/libspeech_enh_lib.so|43939ddb5d76b4ec9a58b7c9861362b0d523193b
-lib64/hw/audio.primary.mt8163.so:vendor/lib64/hw/audio.primary.mt8163.so|8cc81095c9ac72f5332cc1f0460a673f27308f2c
+lib64/hw/audio.primary.mt8163.so:vendor/lib64/hw/audio.primary_amazon.mt8163.so|8cc81095c9ac72f5332cc1f0460a673f27308f2c
 lib64/libaudiocompensationfilter.so:vendor/lib64/libaudiocompensationfilter.so|1add370c8f684db784c4e4b7a5dc0ab508927bfc
 lib64/libaudiocomponentengine.so:vendor/lib64/libaudiocomponentengine.so|326cfa099f1d88e4ff4dadeb0228e15f7864177a
 lib64/libaudiocustparam.so:vendor/lib64/libaudiocustparam.so|99a36950a423889d871027ebfcea262244690752
