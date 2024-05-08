@@ -62,6 +62,7 @@ function blob_fixup() {
     case "${1}" in
         vendor/bin/6620_launcher)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/bin/bin/aal)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -145,6 +146,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/libaal.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/lib*/libaal_cust.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -157,6 +159,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/libaudiostream.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             patchelf --add-needed "libcutils_shim.so" "${2}"
             ;;
         vendor/lib*/libaudiostream_jni.so)
@@ -167,6 +170,9 @@ function blob_fixup() {
             ;;
         vendor/lib*/libcam_utils.so)
             patchelf --add-needed "libui_shim.so" "${2}"
+            ;;
+        vendor/lib*/libdrmmtkutil.so)
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/lib*/libdrmmtkwhitelist.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
@@ -188,6 +194,9 @@ function blob_fixup() {
             ;;
         vendor/lib*/libnvram_daemon_callback.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib*/libnvramagentclient.so)
+            patchelf --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/lib*/libsensors.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
