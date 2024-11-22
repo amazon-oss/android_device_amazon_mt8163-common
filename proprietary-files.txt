@@ -30,3 +30,9 @@ lib64/libgpu_aux.so
 lib64/libion_mtk.so
 lib64/libm4u.so
 lib64/libstlport.so
+
+# Keymaster
+lib/hw/keystore.mt8163.so
+lib/libtz_uree.so
+lib64/hw/keystore.mt8163.so
+lib64/libtz_uree.so
