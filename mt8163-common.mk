@@ -4,6 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Display
+PRODUCT_PACKAGES += \
+    libion
+
+PRODUCT_PACKAGES += \
+    libgui_ext \
+    libui_ext \
+    libgralloc_extra
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
