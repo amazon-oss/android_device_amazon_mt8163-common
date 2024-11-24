@@ -1,5 +1,24 @@
 # Unpinned blobs from douglas-user 5.1.1 LVY48F 50.6.5.9_user_659664620 release-keys
 
+# Audio - from full_giza-user 5.1.1 LVY48F 49.6.2.6_user_626536720 release-keys
+lib/hw/audio.primary.mt8163.so|04d4c371b4cf6ef727b4083b38f179c5ffc92cfd
+lib/libaudiocompensationfilter.so|4b3f64bf6a408f6f2470d747dd518eadc5fae502
+lib/libaudiocomponentengine.so|88de6f90ed60dbf6494fa31a1b9d75a264c74337
+lib/libaudiocustparam.so|22c1d9282fd415f82d1b7e39efdfbbcc8906be92
+lib/libaudiodcrflt.so|68cd079450debc4a55fbcb3f71d08c6f4a02ff94
+lib/libaudiosetting.so|95fb89c873497ecbc06952bc31e518a269c7979d
+lib/libaudiostream_jni.so|ce3807748202c54f488a96aed8bd075ef0841200
+lib/libaudiostream.so|77cf15049013e14f731f3dd64d33676c4aee60af
+lib/libbessound_hd_mtk.so|9a84b7a1530b20187e8b428213abc5b45c91fda8
+lib/libblisrc32.so|920816cfbffd21ad1177b92087367346cc4c5cd7
+lib/libblisrc.so|6aa65a799ba02ad3d2f7a1f85fd97d126abebad0
+lib/libmtklimiter.so|5538ef33392b6df9aabb592343332ae6c01f292a
+lib/libmtkplayer.so|1711b620b974788d2088266d18fd93710742cd5a
+lib/libmtkshifter.so|1a9e2df97e96cd0aab8f1fc59d03eaa663a32c2c
+lib/libmsbc_mtk.so|52355afe845d3fbd2534c123f108dff84944cd7a
+lib/libsmartvolume.so|6e05de55ca136c2cb76d225b7da0fb141be15156
+lib/libspeech_enh_lib.so|43939ddb5d76b4ec9a58b7c9861362b0d523193b
+
 # Display
 bin/aal
 bin/ged_srv
