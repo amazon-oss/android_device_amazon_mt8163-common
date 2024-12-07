@@ -46,7 +46,6 @@ lib/libged.so
 lib/libgpu_aux.so
 lib/libion_mtk.so
 lib/libm4u.so
-lib/libstlport.so
 lib64/egl/libGLES_mali.so
 lib64/hw/gralloc.mt8163.mali.so
 lib64/hw/hwcomposer.mt8163.so
@@ -58,7 +57,6 @@ lib64/libged.so
 lib64/libgpu_aux.so
 lib64/libion_mtk.so
 lib64/libm4u.so
-lib64/libstlport.so
 
 # DRM
 bin/amzn_drmprov_check

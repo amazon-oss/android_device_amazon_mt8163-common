@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
     libui_ext \
     libgralloc_extra
 
+# DRM
+PRODUCT_PACKAGES += \
+    libstlport_shared
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.mt8163
@@ -90,7 +94,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libamazonlog
+    libamazonlog \
+    libstlport_shim
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
