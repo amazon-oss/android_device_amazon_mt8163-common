@@ -27,6 +27,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_SYSTEM)/etc)
 
+# Characteristics
+PRODUCT_CHARACTERISTICS := tablet
+
 # Display
 PRODUCT_PACKAGES += \
     libion
