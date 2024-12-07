@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Power
+PRODUCT_PACKAGES += \
+    power.mt8163
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt8163 \
