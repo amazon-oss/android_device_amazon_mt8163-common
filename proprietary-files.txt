@@ -91,6 +91,9 @@ vendor/lib64/liboemcrypto.so
 bin/amzn_dha_hmac|ba72ec8970fb1c9e645754b0567d8b5fa53bda73
 bin/amzn_dha_tool|98610465230bd7f7452f66c0922198db5475d326
 
+# DRM (Engine) - from karnak-user 6.0 NS6312 1852 amz-p,release-keys
+vendor/lib/mediadrm/libwvdrmengine.so|271de7687df970a9ceadbdc3fa02f32547e730e4
+
 # Keymaster
 lib/hw/keystore.mt8163.so
 lib/libtz_uree.so
