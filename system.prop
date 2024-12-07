@@ -10,6 +10,9 @@ ro.opengles.version=196609
 drm.service.enabled=true
 mtk_in_house_tee_support=true
 
+# RIL
+ro.radio.noril=yes
+
 # SurfaceFlinger
 ro.sf.hwrotation=0
 
