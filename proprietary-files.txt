@@ -19,6 +19,16 @@ lib/libmsbc_mtk.so|52355afe845d3fbd2534c123f108dff84944cd7a
 lib/libsmartvolume.so|6e05de55ca136c2cb76d225b7da0fb141be15156
 lib/libspeech_enh_lib.so|43939ddb5d76b4ec9a58b7c9861362b0d523193b
 
+# Connectivity
+bin/6620_launcher
+bin/6620_wmt_concurrency
+bin/6620_wmt_lpbk
+bin/wmt_loader
+etc/firmware/ROMv2_lm_patch_1_0_hdr.bin
+etc/firmware/ROMv2_lm_patch_1_1_hdr.bin
+etc/firmware/WIFI_RAM_CODE_8163
+etc/firmware/WMT_SOC.cfg
+
 # Display
 bin/aal
 bin/ged_srv
@@ -55,3 +65,8 @@ lib/hw/keystore.mt8163.so
 lib/libtz_uree.so
 lib64/hw/keystore.mt8163.so
 lib64/libtz_uree.so
+
+# Wi-Fi - from karnak-user 6.0 NS6312 1852 amz-p,release-keys
+bin/wpa_supplicant|7d26ffb1e9232991b44cd23f03410402e4ebf120
+bin/wpa_cli|877d282ad8524afdb320e80679e2c075fca04143
+bin/hostapd|1ee3097131959edd9f758f9033cadecf54aa525a
