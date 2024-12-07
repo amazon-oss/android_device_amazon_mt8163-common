@@ -85,6 +85,7 @@ PRODUCT_PACKAGES += \
     fstab.mt8163 \
     init.mt8163.rc \
     init.mt8163.usb.rc \
+    init.power.rc \
     ueventd.mt8163.rc
 
 # Wi-Fi
