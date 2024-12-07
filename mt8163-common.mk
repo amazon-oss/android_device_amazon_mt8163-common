@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
     init.power.rc \
     ueventd.mt8163.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    libamazonlog
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     lib_driver_cmd_mt66xx \
