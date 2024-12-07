@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
     libui_ext \
     libgralloc_extra
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.mt8163
+
 # Media (OMX)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_SYSTEM)/etc)
