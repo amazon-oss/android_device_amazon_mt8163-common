@@ -60,40 +60,22 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        lib/hw/audio.primary.mt8163.so)
+        lib*/hw/audio.primary.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libaudiocomponentengine.so)
+        lib*/libaudiocomponentengine.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libaudiocustparam.so)
+        lib*/libaudiocustparam.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libaudiostream_jni.so)
+        lib*/libaudiostream_jni.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libaudiostream.so)
+        lib*/libaudiostream.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libsmartvolume.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/hw/audio.primary.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libaudiocomponentengine.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libaudiocustparam.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libaudiostream_jni.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libaudiostream.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libsmartvolume.so)
+        lib*/libsmartvolume.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         bin/6620_launcher)
@@ -108,141 +90,84 @@ function blob_fixup() {
         bin/guiext-server)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/egl/libGLES_mali.so)
+        lib*/egl/libGLES_mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/hw/gralloc.mt8163.mali.so)
+        lib*/hw/gralloc.mt8163.mali.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/hw/hwcomposer.mt8163.so)
+        lib*/hw/hwcomposer.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
-        lib/hw/memtrack.mt8163.so)
+        lib*/hw/memtrack.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libaal.so)
+        lib*/libaal.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libaal_cust.so)
+        lib*/libaal_cust.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libion_mtk.so)
+        lib*/libion_mtk.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libm4u.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/egl/libGLES_mali.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/hw/gralloc.mt8163.mali.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/hw/hwcomposer.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/hw/memtrack.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libaal.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libaal_cust.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libion_mtk.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libm4u.so)
+        lib*/libm4u.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         bin/rpmb_svc)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/hw/amzn_dha.mt8163.so)
+        lib*/hw/amzn_dha.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/lib_uree_mtk_modular_drm.so)
+        lib*/lib_uree_mtk_modular_drm.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/lib_uree_mtk_video_secure_al.so)
+        lib*/lib_uree_mtk_video_secure_al.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libdrmmtkwhitelist.so)
+        lib*/libdrmmtkwhitelist.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib64/hw/amzn_dha.mt8163.so)
+        vendor/lib*/liboemcrypto.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib64/lib_uree_mtk_modular_drm.so)
+        lib*/hw/keystore.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib64/lib_uree_mtk_video_secure_al.so)
+        lib*/libtz_uree.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib64/libdrmmtkwhitelist.so)
+        lib*/libMtkOmxAIVPlayer.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        vendor/lib/liboemcrypto.so)
+        lib*/libMtkOmxCore.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        vendor/lib64/liboemcrypto.so)
+        lib*/libMtkOmxMp3Dec.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/hw/keystore.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib/libtz_uree.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/hw/keystore.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libtz_uree.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib/libMtkOmxAIVPlayer.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib/libMtkOmxCore.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib/libMtkOmxMp3Dec.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib/libMtkOmxVdecEx.so)
+        lib*/libMtkOmxVdecEx.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
-        lib/libMtkOmxVenc.so)
+        lib*/libMtkOmxVenc.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libmtk_mmutils.so)
+        lib*/libmtk_mmutils.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/libvcodecdrv.so)
+        lib*/libvcodecdrv.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib64/libMtkOmxCore.so)
+        lib*/hw/thermal.mt8163.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib64/libmtk_mmutils.so)
+        lib*/libthermalservice.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        lib/hw/thermal.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib/libthermalservice.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/hw/thermal.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib64/libthermalservice.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        vendor/lib/libWVStreamControlAPI_L1.so)
+        vendor/lib*/libWVStreamControlAPI_L1.so)
             patchelf --add-needed "libstlport_shim.so" "${2}"
             ;;
     esac
