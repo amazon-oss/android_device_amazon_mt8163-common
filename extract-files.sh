@@ -154,9 +154,11 @@ function blob_fixup() {
             ;;
         lib*/libMtkOmxVenc.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             ;;
         lib*/libmtk_mmutils.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
+            patchelf --add-needed "libui_shim.so" "${2}"
             ;;
         lib*/libvcodecdrv.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
