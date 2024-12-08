@@ -31,6 +31,11 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # Camera
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
+# Charger
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 1024*1024
