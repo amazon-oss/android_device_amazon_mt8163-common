@@ -84,9 +84,6 @@ function blob_fixup() {
         bin/wmt_loader)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
-        bin/aal)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
         bin/guiext-server)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
@@ -101,12 +98,6 @@ function blob_fixup() {
             sed -i 's|_ZN7android19GraphicBufferMapper4lockEPK13native_handleiRKNS_4RectEPPv|_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv|g' "${2}"
             ;;
         lib*/hw/memtrack.mt8163.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib*/libaal.so)
-            patchelf --add-needed "libamazonlog.so" "${2}"
-            ;;
-        lib*/libaal_cust.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
         lib*/libion_mtk.so)
