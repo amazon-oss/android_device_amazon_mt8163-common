@@ -21,6 +21,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+
 # Boot
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x07f88000
