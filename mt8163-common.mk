@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libamazonlog \
+    libc_shim \
     libgui_shim \
     libstlport_shim \
     libui_shim
