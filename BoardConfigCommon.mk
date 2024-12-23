@@ -67,6 +67,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 
+# OMX
+TARGET_OMX_LEGACY_RESCALING := true
+
 # Partitions
 TARGET_COPY_OUT_SYSTEM := system
 
