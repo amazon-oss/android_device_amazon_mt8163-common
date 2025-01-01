@@ -121,6 +121,9 @@ function blob_fixup() {
         lib*/libdrmmtkwhitelist.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
+        lib*/libdrmmtkutil.so)
+            sed -i 's/\([Uu][Cc][Nn][Vv]_[A-Za-z_]*\)_53/\1_56/g' "${2}"
+            ;;
         vendor/lib*/liboemcrypto.so)
             patchelf --add-needed "libamazonlog.so" "${2}"
             ;;
