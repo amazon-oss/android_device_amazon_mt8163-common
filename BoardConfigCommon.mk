@@ -47,5 +47,8 @@ BOARD_USES_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt8163
 TARGET_BOARD_VENDOR := amazon
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt8163
+
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
