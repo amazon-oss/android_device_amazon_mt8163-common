@@ -18,5 +18,11 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0
 endif
 
+# Call dalvik heap config
+$(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk)
+
+# Call hwui memory config
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/amazon/mt8163-common/mt8163-common-vendor.mk)
