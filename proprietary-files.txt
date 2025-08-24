@@ -36,6 +36,10 @@ lib64/libm4u.so
 lib64/libui_ext.so
 lib64/libstlport.so
 
+# IDME
+bin/idme
+bin/devicetype_service
+
 # Keymaster
 lib/hw/keystore.mt8163.so
 lib/libtz_uree.so
