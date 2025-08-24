@@ -1,2 +1,9 @@
+# Display
+ro.hardware.gralloc=mt8163.mali
+ro.opengles.version=196609
+
+# SurfaceFlinger
+ro.sf.hwrotation=0
+
 # USB
 ro.usb.vid=1949
