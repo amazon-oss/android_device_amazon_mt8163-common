@@ -33,6 +33,12 @@ BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_SECOND_OFFSET)
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# Kernel
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/amazon/mt8163-4.9
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/prebuilts/linaro/linux-x86/aarch64/aarch64-linux-gnu/bin/aarch64-linux-gnu-
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
 
