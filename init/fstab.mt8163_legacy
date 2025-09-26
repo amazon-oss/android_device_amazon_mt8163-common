@@ -3,7 +3,7 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 #<src>                                                           <mnt_point> <type> <mnt_flags and options>                                <fs_mgr_flags>
-/dev/block/platform/soc/11230000.mmc/by-name/system     /system     ext4   ro                                                     wait
+/dev/block/platform/soc/11230000.mmc/by-name/system     /system     ext4   ro                                                     wait,first_stage_mount
 /dev/block/platform/soc/11230000.mmc/by-name/userdata   /data       ext4   noatime,nosuid,nodev,noauto_da_alloc,errors=remount-ro wait,check,formattable,reservedsize=128m
 /dev/block/platform/soc/11230000.mmc/by-name/cache      /cache      ext4   noatime,nosuid,nodev,noauto_da_alloc                   wait,check,formattable
 

@@ -17,7 +17,8 @@ else
 _fstab_variant := legacy
 endif
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.mt8163_$(_fstab_variant):$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt8163
+    $(LOCAL_PATH)/init/fstab.mt8163_$(_fstab_variant):$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt8163 \
+    $(LOCAL_PATH)/init/fstab.mt8163_$(_fstab_variant):$(TARGET_COPY_OUT_RAMDISK)/fstab.mt8163
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
