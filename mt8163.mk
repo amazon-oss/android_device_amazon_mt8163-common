@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     disable_configstore
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service.software
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
