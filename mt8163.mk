@@ -10,6 +10,15 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt8163.rc:recovery/root/init.recovery.mt8163.rc
 
+# Rootdir
+ifeq ($(TARGET_HAS_VENDOR_PARTITION),true)
+_fstab_variant := vendor
+else
+_fstab_variant := legacy
+endif
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.mt8163_$(_fstab_variant):$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt8163
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

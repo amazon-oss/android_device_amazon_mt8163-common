@@ -5,6 +5,12 @@
 
 COMMON_PATH := device/amazon/mt8163-common
 
+ifeq ($(TARGET_HAS_VENDOR_PARTITION),true)
+_fstab_variant := vendor
+else
+_fstab_variant := legacy
+endif
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv8-a
@@ -44,6 +50,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt8163_$(_fstab_variant)
 
 # VNDK
 BOARD_VNDK_VERSION := current
