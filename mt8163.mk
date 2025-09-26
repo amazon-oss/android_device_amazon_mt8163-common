@@ -21,6 +21,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.mt8163_$(_fstab_variant):$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt8163 \
     $(LOCAL_PATH)/init/fstab.mt8163_$(_fstab_variant):$(TARGET_COPY_OUT_RAMDISK)/fstab.mt8163
 
+PRODUCT_PACKAGES += \
+    init.mt8163.rc \
+    init.mt8163.usb.rc \
+    init.mt8163.power.rc \
+    ueventd.mt8163.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

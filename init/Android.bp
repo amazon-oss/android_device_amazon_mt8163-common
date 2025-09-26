@@ -1,0 +1,32 @@
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.mt8163.rc",
+    src: "init.mt8163.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt8163.usb.rc",
+    src: "init.mt8163.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt8163.power.rc",
+    src: "init.mt8163.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mt8163.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.mt8163.rc",
+    vendor: true,
+}
