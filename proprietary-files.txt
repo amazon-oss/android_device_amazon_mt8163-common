@@ -1,1 +1,26 @@
-#
+# Unpinned blobs from Amazon/karnak/karnak:9/PS7331.4463N/0031575863040:user/amz-p,release-keys
+
+# Display (DpFramework) 
+vendor/lib/libbwc.so
+vendor/lib/libdpframework.so
+
+# Display (GPU) 
+vendor/lib/egl/egl.cfg
+vendor/lib/egl/libGLES_mali.so
+vendor/lib/hw/gralloc.mt8163.so
+vendor/lib/hw/memtrack.mt8163.so
+vendor/lib/libged.so
+vendor/lib/libgpu_aux.so
+vendor/lib/libgralloc_extra.so
+vendor/lib/libOpenCL.so
+
+# Display (HWComposer)
+vendor/lib/hw/hwcomposer.mt8163.so
+
+# Display (ION)
+vendor/lib/libion_mtk.so
+vendor/lib/libion_ulit.so
+vendor/lib/libm4u.so
+
+# Power (Interfaces)
+vendor/lib/vendor.mediatek.hardware.power@2.0.so
