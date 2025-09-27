@@ -19,6 +19,12 @@
         <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.drm</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.3::ICryptoFactory/clearkey</fqname>
+        <fqname>@1.3::IDrmFactory/clearkey</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::IAllocator/default</fqname>

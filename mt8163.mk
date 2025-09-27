@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     disable_configstore
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
