@@ -157,3 +157,7 @@ vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libnvram_platform.so
 vendor/lib/libnvram.so
+
+# Sensors
+vendor/lib/hw/sensors.mt8163.so
+vendor/lib/libksensor.so
