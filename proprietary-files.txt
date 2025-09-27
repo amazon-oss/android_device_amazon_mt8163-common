@@ -153,6 +153,29 @@ vendor/lib/libladder.so|b3161af9c1ae115b467ed6d210355348717145c8
 # Power (Interfaces)
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 
+# Media
+vendor/etc/mtk_omx_core.cfg
+vendor/lib/libGdmaScalerPipe.so
+vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libjpeg-alpha_vendor.so
+vendor/lib/libJpgDecPipe.so
+vendor/lib/libJpgEncPipe.so
+vendor/lib/libmhalImageCodec.so
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxVdecEx.so
+vendor/lib/libMtkOmxVenc.so
+vendor/lib/libstagefrighthw.so
+vendor/lib/libSwJpgCodec.so
+vendor/lib/libtz_uree.so
+vendor/lib/libvc1dec_sa.ca7.so
+vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_utility.so
+vendor/lib/libvcodecdrv.so
+vendor/lib/libvp8dec_sa.ca7.so
+vendor/lib/libvp8enc_sa.ca7.so
+vendor/lib/libvp9dec_sa.ca7.so
+
 # NVRAM
 vendor/lib/libcustom_nvram.so
 vendor/lib/libnvram_platform.so
