@@ -9,6 +9,7 @@ debug.stagefright.ccodec=0
 ro.have_aacencode_feature=1
 vendor.mtk.vdec.waitkeyframeforplay=1
 ro.vendor.mtk_wmv_playback_support=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # SurfaceFlinger
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
