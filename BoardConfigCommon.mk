@@ -51,6 +51,10 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt8163_$(_fstab_variant)
 TARGET_RECOVERY_PIXEL_FORMAT := ARGB_8888
