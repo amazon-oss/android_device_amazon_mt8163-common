@@ -34,6 +34,11 @@
         <fqname>@2.0::IMapper/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.health</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IHealth/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.memtrack</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMemtrack/default</fqname>
