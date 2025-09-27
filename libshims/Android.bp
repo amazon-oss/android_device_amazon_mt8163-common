@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2022-2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library {
+    name: "libbase_shim",
+    srcs: [
+        "libbase_shim.cpp",
+    ],
+    vendor: true
+}
