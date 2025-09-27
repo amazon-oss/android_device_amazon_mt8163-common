@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib/libnvram.so)
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
         vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "android.hardware.audio.common@4.0-util.so" "android.hardware.audio.common@4.0-util-v28.so" "${2}"
             ;;

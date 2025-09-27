@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
+    libbase_shim \
     libtinycompress \
     libalsautils \
     libnbaio_mono \
