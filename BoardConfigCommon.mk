@@ -42,5 +42,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
