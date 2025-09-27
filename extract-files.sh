@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib/libMtkOmxVdecEx.so)
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
+            ;;
         vendor/lib/libnvram.so)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
