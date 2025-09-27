@@ -294,6 +294,11 @@ on post-fs-data
     # Encrypt phone function
     setprop vold.post_fs_data_done 1
 
+on early-boot
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
 on boot
     chmod 0660 /sys/power/autosleep
 
