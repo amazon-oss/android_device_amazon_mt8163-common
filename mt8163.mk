@@ -120,6 +120,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.mt8163_$(_fstab_variant):$(TARGET_COPY_OUT_RAMDISK)/fstab.mt8163
 
 PRODUCT_PACKAGES += \
+    init.insmod.sh \
     init.mt8163.rc \
     init.mt8163.usb.rc \
     init.mt8163.power.rc \
