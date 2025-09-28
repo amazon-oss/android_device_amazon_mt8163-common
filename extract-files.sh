@@ -63,6 +63,9 @@ function blob_fixup() {
         vendor/lib/libMtkOmxVdecEx.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;
+        vendor/lib/libmtk_drvb.so)
+            sed -i 's|\x99@\x1a\x02\xd1 F\x02\xb0\x10\xbd\x02\xf0|\x99@\x1a\x02\xd1\x00 \x02\xb0\x10\xbd\x02\xf0|g' "${2}"
+            ;;
         vendor/lib/libnvram.so)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
