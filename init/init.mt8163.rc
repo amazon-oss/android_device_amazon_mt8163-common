@@ -1,6 +1,7 @@
 import /vendor/etc/init/hw/init.mt8163.power.rc
 import /vendor/etc/init/hw/init.mt8163.usb.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
+import /vendor/etc/init/hw/init.target.rc
 
 on early-init
     # Mount debugfs
