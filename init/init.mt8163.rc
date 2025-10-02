@@ -302,6 +302,7 @@ on early-boot
     mkdir /data/vendor/wifi 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+    mkdir /data/vendor/bluedroid 0771 bluetooth bluetooth
 
     # wait for insmod_sh to finish all modules
     wait_for_prop sys.all.modules.ready 1
@@ -349,6 +350,11 @@ on boot
     chmod 0660 /proc/cpufreq/cpufreq_limited_by_hevc
     chown system system /proc/cpufreq/cpufreq_limited_max_freq_by_user
     chmod 0660 /proc/cpufreq/cpufreq_limited_max_freq_by_user
+
+on property:sys.conn_macs.ready=1
+    # Bluetooth
+    chown bluetooth bluetooth /data/vendor/bluedroid/macbt
+    chmod 0666 /data/vendor/bluedroid/macbt
 
 on property:vold.decrypt=trigger_reset_main
     setprop sys.boot_completed 0
