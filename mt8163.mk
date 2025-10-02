@@ -15,7 +15,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0.vendor \
     android.hardware.audio@4.0.vendor \
     android.hardware.audio.common-util.vendor \
-    android.hardware.audio.common@4.0-util.vendor \
+    android.hardware.audio.common@4.0-util-v28 \
     android.hardware.audio.effect@2.0.vendor \
     android.hardware.audio.effect@4.0.vendor
 

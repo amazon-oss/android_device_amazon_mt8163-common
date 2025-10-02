@@ -2,7 +2,7 @@
 
 # Audio - from onn/ONA19TB003/ONA19TB003:9/PPR1.180610.011/1570788406:user/release-keys
 vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so:vendor/lib/hw/android.hardware.audio.effect@4.0-impl-prebuilt.so|d8c61f0c1b6279a2a85119080e5dbf582876dd7d
-vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so|bd9790f30a0d79dc8f46e1bcb717b2eadb955044
+vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so|bd9790f30a0d79dc8f46e1bcb717b2eadb955044|2768e1ca6362e2c089fa15cd6ad0be16e3d2dddd
 vendor/lib/libaedv.so|f5d1fbabfda118a70269cb7e8bdee17db96dbb1f
 vendor/lib/libaudiocompensationfilter_vendor.so|ec1ba704f0ada9068eec6f9a330b46399f074c5f
 vendor/lib/libaudiocomponentengine_vendor.so|1b7be578a61f4f5307376d3179d66e49805b2d34
