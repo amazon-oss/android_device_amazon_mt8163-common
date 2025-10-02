@@ -60,4 +60,9 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ISensors/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>fireos.hardware.amazonthermal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IAmazonThermal/default</fqname>
+    </hal>
 </manifest>
