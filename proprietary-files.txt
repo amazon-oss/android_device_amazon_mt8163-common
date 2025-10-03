@@ -150,7 +150,17 @@ vendor/lib/libmtk_drvb.so
 # Ladder (Stack Unwinding) - from lancelot-user 11 RP1A.200720.011 V12.5.2.0.RJCINXM release-keys
 vendor/lib/libladder.so|b3161af9c1ae115b467ed6d210355348717145c8
 
-# Power (Interfaces)
+# Power
+vendor/bin/hw/vendor.mediatek.hardware.power@2.0-service
+vendor/etc/init/vendor.mediatek.hardware.power@2.0-init.rc
+vendor/etc/init/vendor.mediatek.hardware.power@2.0-service.rc
+vendor/etc/power_whitelist_cfg.xml
+vendor/etc/powerscntbl.cfg
+vendor/lib/hw/power.mt8163.so
+vendor/lib/hw/vendor.mediatek.hardware.power@2.0-impl.so
+vendor/lib/libfpspolicy.so
+vendor/lib/libpowerhal.so
+vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 
 # Media
