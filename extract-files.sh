@@ -60,7 +60,8 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libMtkOmxVdecEx.so)
+        vendor/lib/libMtkOmxVdecEx.so|\
+        vendor/lib/libcam.client.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;
         vendor/lib/libmtk_drvb.so)
