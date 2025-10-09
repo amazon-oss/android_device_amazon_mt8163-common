@@ -21,7 +21,7 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
 
 # Boot Image
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 firmware_class.path=/vendor/firmware
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 console=ttyMT0,921600n1 firmware_class.path=/vendor/firmware
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
