@@ -1,0 +1,4 @@
+service suspend_blocker_mt8163 /vendor/bin/suspend_blocker_mt8163
+    class hal
+    group system
+    user root
