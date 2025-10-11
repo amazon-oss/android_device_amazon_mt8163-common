@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
     libbase_shim \
+    libbluetooth_mtk_pure \
     libtinycompress \
     libalsautils \
     libnbaio_mono \

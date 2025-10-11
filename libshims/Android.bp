@@ -11,3 +11,11 @@ cc_library {
     ],
     vendor: true
 }
+
+cc_library {
+    name: "libbluetooth_mtk_pure",
+    srcs: [
+        "libbluetooth_mtk_pure.c",
+    ],
+    vendor: true,
+}
