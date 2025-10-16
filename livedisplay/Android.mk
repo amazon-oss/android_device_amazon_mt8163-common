@@ -16,6 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_INIT_RC := vendor.lineage.livedisplay@2.0-service-mt8163.rc
+LOCAL_VINTF_FRAGMENTS := vendor.lineage.livedisplay@2.0-service-mt8163.xml
 LOCAL_MODULE := vendor.lineage.livedisplay@2.0-service-mt8163
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true
