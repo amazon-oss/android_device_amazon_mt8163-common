@@ -79,11 +79,6 @@ vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 
-# NVRAM
-vendor/lib/libcustom_nvram.so
-vendor/lib/libnvram_platform.so
-vendor/lib/libnvram.so
-
 # Sensors
 vendor/lib/hw/sensors.mt8163.so
 vendor/lib/libksensor.so
