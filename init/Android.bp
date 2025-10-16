@@ -24,13 +24,6 @@ prebuilt_etc {
     vendor: true,
 }
 
-prebuilt_etc {
-    name: "ueventd.mt8163.rc",
-    filename: "ueventd.rc",
-    src: "ueventd.mt8163.rc",
-    vendor: true,
-}
-
 sh_binary {
     name: "init.insmod.sh",
     src: "init.insmod.sh",
