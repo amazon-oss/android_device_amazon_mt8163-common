@@ -7,6 +7,11 @@ ro.vendor.mtk_blulight_def_support=0
 ro.vendor.mtk_pq_color_mode=0
 ro.vendor.mtk_pq_support=0
 
+# DRM
+drm.service.enabled=true
+ro.vendor.mtk_in_house_tee_support=true
+ro.vendor.mtk_widevine_drm_l1_support=1
+
 # Fdsan
 debug.fdsan=warn_once
 

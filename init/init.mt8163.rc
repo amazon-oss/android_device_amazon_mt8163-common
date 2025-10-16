@@ -19,6 +19,10 @@ on init
     write /proc/sys/net/core/wmem_max 8388608
     write /proc/sys/net/core/rmem_max 8388608
 
+    # Create symlinks for kb and dkb
+    symlink /dev/block/platform/soc/11230000.mmc/by-name/kb /dev/kb
+    symlink /dev/block/platform/soc/11230000.mmc/by-name/dkb /dev/dkb
+
 on fs
     mount_all /vendor/etc/fstab.mt8163 --early
 

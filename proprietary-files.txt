@@ -82,6 +82,21 @@ vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libm4u.so
 
+# DRM
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/bin/kisd
+vendor/bin/rpmb_svc
+vendor/bin/securetime
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/etc/init/kisd.rc
+vendor/etc/init/rpmb_svc.rc
+vendor/etc/init/securetime.rc
+vendor/lib/lib_uree_mtk_modular_drm.so
+vendor/lib/lib_uree_mtk_video_secure_al.so
+vendor/lib/liboemcrypto.so
+vendor/lib/liburee_meta_drmkeyinstall_v2.so
+vendor/lib/libwvhidl.so
+
 # DRVB
 vendor/lib/libmtk_drvb.so
 
