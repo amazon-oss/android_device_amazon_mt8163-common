@@ -64,7 +64,11 @@ TARGET_BOARD_PLATFORM := mt8163
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+ifeq ($(TARGET_HAS_VENDOR_PARTITION),true)
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+else
+TARGET_SYSTEM_PROP += $(TARGET_VENDOR_PROP) $(COMMON_PATH)/vendor.prop
+endif
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt8163_$(_fstab_variant)
