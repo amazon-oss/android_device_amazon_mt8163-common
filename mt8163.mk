@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Android Go optimisations
+$(call inherit-product, device/amazon/mt8163-common/go_opt.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
