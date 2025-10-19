@@ -49,6 +49,9 @@ TARGET_KERNEL_SOURCE := kernel/amazon/mt8163-4.9
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/prebuilts/linaro/linux-x86/aarch64/aarch64-linux-gnu/bin/aarch64-linux-gnu-
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
+# Malloc
+MALLOC_SVELTE := true
+
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
