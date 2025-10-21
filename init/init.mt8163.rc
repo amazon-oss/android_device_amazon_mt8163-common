@@ -355,6 +355,8 @@ on boot
     chown system system /proc/cpufreq/cpufreq_limited_max_freq_by_user
     chmod 0660 /proc/cpufreq/cpufreq_limited_max_freq_by_user
 
+    stop console
+
 on property:sys.conn_macs.ready=1
     # Bluetooth
     chown bluetooth bluetooth /data/vendor/bluedroid/macbt
