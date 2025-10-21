@@ -60,18 +60,14 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libMtkOmxVdecEx.so|\
-        vendor/lib/libcam.client.so)
+        vendor/lib/libMtkOmxVdecEx.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;
         vendor/lib/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
             ;;
         vendor/lib/libmtk_drvb.so)
-            sed -i 's|\x99@\x1a\x02\xd1 F\x02\xb0\x10\xbd\x02\xf0|\x99@\x1a\x02\xd1\x00 \x02\xb0\x10\xbd\x02\xf0|g' "${2}"
-            ;;
-        vendor/lib/libnvram.so)
-            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            sed -i 's/\x10\xb5\x82\xb0\x23\x48/\x00\x20\x70\x47\x23\x48/' "${2}"
             ;;
     esac
 }
