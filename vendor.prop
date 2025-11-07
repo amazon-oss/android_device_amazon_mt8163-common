@@ -18,6 +18,7 @@ debug.fdsan=warn_once
 # LMK
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
+ro.lmk.log_stats=false
 ro.lmk.use_new_strategy=true
 
 # Media
