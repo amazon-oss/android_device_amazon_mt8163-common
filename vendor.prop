@@ -1,6 +1,9 @@
 # Bluetooth
 ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 
+# Dalvik
+dalvik.vm.madvise-random=true
+
 # Display
 ro.opengles.version=196609
 ro.vendor.mtk_blulight_def_support=0
