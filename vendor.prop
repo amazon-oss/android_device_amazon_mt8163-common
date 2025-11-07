@@ -15,6 +15,11 @@ ro.vendor.mtk_widevine_drm_l1_support=1
 # Fdsan
 debug.fdsan=warn_once
 
+# LMK
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_new_strategy=true
+
 # Media
 debug.stagefright.ccodec=0
 ro.have_aacencode_feature=1
