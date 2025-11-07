@@ -2,7 +2,9 @@
 ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 
 # Dalvik
+dalvik.vm.dex2oat-minidebuginfo=false
 dalvik.vm.madvise-random=true
+dalvik.vm.minidebuginfo=false
 
 # Display
 ro.opengles.version=196609
