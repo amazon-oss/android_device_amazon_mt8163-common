@@ -2,6 +2,16 @@ on boot
     write /proc/sys/vm/dirty_writeback_centisecs 300
 
 on post-fs-data
+    # Set permissions for PowerHAL
+    chown system system /proc/hps/rush_boost_enabled
+    chmod 660 /proc/hps/rush_boost_enabled
+
+    chown system system /sys/kernel/debug/ged/hal/fps_upper_bound
+    chmod 660 /sys/kernel/debug/ged/hal/fps_upper_bound
+
+    chown system system /sys/devices/platform/dynamic_boost/dynamic_boost
+    chmod 660 /sys/devices/platform/dynamic_boost/dynamic_boost
+
     # Adjust minimum free memory space (default is 2.5M)
     write /proc/sys/vm/min_free_kbytes 16384
 
