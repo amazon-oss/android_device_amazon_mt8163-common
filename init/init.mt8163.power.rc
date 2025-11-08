@@ -32,3 +32,6 @@ on post-fs-data
 on property:sys.boot_completed=1
     write /sys/kernel/rcu_expedited 1
     write /sys/power/pm_print_times 0
+
+    # interactive: set target_loads to 70%
+    write /sys/devices/system/cpu/cpufreq/interactive/target_loads 70
