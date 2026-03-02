@@ -2,7 +2,7 @@
 
 ```
 #
-# SPDX-FileCopyrightText: 2025 The LineageOS Project
+# SPDX-FileCopyrightText: 2025-2026 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
