@@ -357,6 +357,10 @@ on boot
 
     stop console
 
+    # ADB over network
+    setprop service.adb.tcp.port 5555
+    start adbd
+
 on property:sys.conn_macs.ready=1
     # Bluetooth
     chown bluetooth bluetooth /data/vendor/bluedroid/macbt
