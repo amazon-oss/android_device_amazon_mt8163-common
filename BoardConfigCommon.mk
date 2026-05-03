@@ -34,5 +34,10 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/prebuilts/gcc/linux-x86/arm/g
 
 TARGET_LINUX_KERNEL_VERSION := 4.9
 
+# Platform
+BOARD_USES_MTK_HARDWARE := true
+TARGET_BOARD_PLATFORM := mt8163
+TARGET_BOARD_VENDOR := amazon
+
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
