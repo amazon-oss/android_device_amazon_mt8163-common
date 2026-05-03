@@ -22,6 +22,12 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 -
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# Filesystems
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE   := ext4
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE    := ext4
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_USERIMAGES_USE_EXT4 := true
+
 # Kernel
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
@@ -33,6 +39,10 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/prebuilts/gcc/linux-x86/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 TARGET_LINUX_KERNEL_VERSION := 4.9
+
+# Partitions
+TARGET_COPY_OUT_SYSTEM := system
+TARGET_COPY_OUT_VENDOR := system/vendor
 
 # Platform
 BOARD_USES_MTK_HARDWARE := true
