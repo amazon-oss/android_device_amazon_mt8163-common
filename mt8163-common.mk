@@ -11,6 +11,10 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_PACKAGES += \
     libion
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.mt8163
+
 # Media (OMX)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_SYSTEM)/etc)
