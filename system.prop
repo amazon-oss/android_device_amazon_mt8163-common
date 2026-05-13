@@ -1,2 +1,5 @@
+# RIL
+ro.radio.noril=yes
+
 # USB
 ro.usb.vid=1949
