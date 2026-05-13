@@ -1,0 +1,18 @@
+# Unpinned blobs from checkers-user 6.0 NS6572 6451 amz-p,release-keys
+
+# Display
+lib/libsync.so
+vendor/lib/egl/libGLES_mali.so
+vendor/lib/hw/gralloc.mt8163.so
+vendor/lib/hw/hwcomposer.mt8163.so
+vendor/lib/hw/memtrack.mt8163.so
+vendor/lib/libbwc.so
+vendor/lib/libdpframework.so
+vendor/lib/libged.so
+vendor/lib/libgpu_aux.so
+vendor/lib/libgralloc_extra.so
+vendor/lib/libgui_ext.so
+vendor/lib/libion_mtk.so
+vendor/lib/libm4u.so
+vendor/lib/libtz_uree.so
+vendor/lib/libui_ext.so
