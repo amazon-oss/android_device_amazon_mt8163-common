@@ -16,3 +16,9 @@ vendor/lib/libion_mtk.so
 vendor/lib/libm4u.so
 vendor/lib/libtz_uree.so
 vendor/lib/libui_ext.so
+
+# Keymaster
+vendor/bin/kisd
+vendor/bin/rpmb_svc
+vendor/lib/hw/keystore.mt8163.so
+vendor/lib/liburee_meta_drmkeyinstall_v2.so

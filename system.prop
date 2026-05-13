@@ -5,5 +5,8 @@ ro.opengles.version=196609
 # RIL
 ro.radio.noril=yes
 
+# TEE
+ro.mtk_in_house_tee_support=true
+
 # USB
 ro.usb.vid=1949
