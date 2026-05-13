@@ -6,6 +6,11 @@ ro.opengles.version=196609
 drm.service.enabled=true
 ro.mtk_key_manager_kb_path=1
 
+# OMX
+mtk.vdec.waitkeyframeforplay=1
+ro.media.maxmem=500000000
+ro.mtk_sec_video_path_support=1
+
 # RIL
 ro.radio.noril=yes
 
