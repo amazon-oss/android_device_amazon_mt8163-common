@@ -22,5 +22,10 @@ PRODUCT_PACKAGES += \
     init.mt8163.usb.rc \
     ueventd.mt8163.rc
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    hostapd \
+    wpa_supplicant
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/amazon/mt8163-common/mt8163-common-vendor.mk)

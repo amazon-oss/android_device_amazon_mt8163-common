@@ -63,5 +63,10 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt8163
 
+# Wi-Fi
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_HOSTAPD_DRIVER := NL80211
+
 # Inherit the proprietary files
 include vendor/amazon/mt8163-common/BoardConfigVendor.mk
