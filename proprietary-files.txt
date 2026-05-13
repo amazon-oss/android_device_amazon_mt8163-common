@@ -51,3 +51,6 @@ vendor/bin/kisd
 vendor/bin/rpmb_svc
 vendor/lib/hw/keystore.mt8163.so
 vendor/lib/liburee_meta_drmkeyinstall_v2.so
+
+# Time
+lib/hw/local_time.mt8163.so
