@@ -7,6 +7,9 @@
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Characteristics
+PRODUCT_CHARACTERISTICS ?= tablet
+
 # Display
 PRODUCT_PACKAGES += \
     libion
