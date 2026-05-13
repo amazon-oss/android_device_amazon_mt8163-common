@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Bootanimation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Display
 PRODUCT_PACKAGES += \
     libion
