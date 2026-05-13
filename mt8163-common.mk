@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
     init.mt8163.usb.rc \
     ueventd.mt8163.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    libamazonlog
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     hostapd \
