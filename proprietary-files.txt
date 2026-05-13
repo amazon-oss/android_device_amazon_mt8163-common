@@ -1,5 +1,9 @@
 # Unpinned blobs from checkers-user 6.0 NS6572 6451 amz-p,release-keys
 
+# IDME
+bin/idme
+lib/hw/amzn_idme.default.so
+
 # Display
 lib/libsync.so
 vendor/lib/egl/libGLES_mali.so
