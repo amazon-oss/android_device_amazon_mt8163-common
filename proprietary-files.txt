@@ -74,5 +74,9 @@ vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 
+# Power
+lib/hw/perfboost.default.so
+lib/hw/perfboost.mt8163.so
+
 # Time
 lib/hw/local_time.mt8163.so
