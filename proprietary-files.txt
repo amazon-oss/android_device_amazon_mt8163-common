@@ -21,6 +21,28 @@ vendor/lib/libm4u.so
 vendor/lib/libtz_uree.so
 vendor/lib/libui_ext.so
 
+# DRM
+bin/amzn_dha_hmac
+bin/amzn_dha_self_test.sh
+bin/amzn_dha_tool
+bin/amzn_drmprov_check
+bin/amzn_drmprov_tool
+bin/amzn_xo_tool
+bin/fireos-dha
+etc/init/amzn_xo_tool.rc
+etc/init/dha.rc
+lib/hw/amzn_dha.mt8163.so
+lib/hw/amzn_drmprov.mt8163.so
+lib/libdha-aidl.so
+vendor/lib/lib_uree_mtk_crypto.so
+vendor/lib/lib_uree_mtk_modular_drm.so
+vendor/lib/lib_uree_mtk_video_secure_al.so
+vendor/lib/liboemcrypto.so
+vendor/lib/mediadrm/libmockdrmcryptoplugin.so
+vendor/lib/mediadrm/libmockdrmcryptoplugin.so
+vendor/lib/mediadrm/libplayreadydrmplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
+
 # Gatekeeper
 vendor/lib/hw/gatekeeper.mt8163.so
 
