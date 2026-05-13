@@ -48,6 +48,9 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/prebuilts/gcc/linux-x86/arm/g
 
 TARGET_LINUX_KERNEL_VERSION := 4.9
 
+# Malloc
+MALLOC_SVELTE := true
+
 # Partitions
 TARGET_COPY_OUT_SYSTEM := system
 TARGET_COPY_OUT_VENDOR := system/vendor
