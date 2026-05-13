@@ -17,6 +17,9 @@ vendor/lib/libm4u.so
 vendor/lib/libtz_uree.so
 vendor/lib/libui_ext.so
 
+# Gatekeeper
+vendor/lib/hw/gatekeeper.mt8163.so
+
 # Keymaster
 vendor/bin/kisd
 vendor/bin/rpmb_svc
