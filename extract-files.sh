@@ -58,6 +58,38 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        lib/libdha-aidl.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        lib/libsmartvolume.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        bin/fireos-dha)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        vendor/lib/hw/audio.primary.mt8163.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        vendor/lib/libbwc.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        vendor/lib/libgui_ext.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        vendor/lib/libui_ext.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        vendor/lib/mediadrm/libmockdrmcryptoplugin.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+        vendor/lib/mediadrm/libwvdrmengine.so)
+            patchelf --add-needed "libutils_shim.so" "${2}"
+            ;;
+    esac
+}
+
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
     setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
