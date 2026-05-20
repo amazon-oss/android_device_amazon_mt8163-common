@@ -34,14 +34,14 @@ etc/init/dha.rc
 lib/hw/amzn_dha.mt8163.so
 lib/hw/amzn_drmprov.mt8163.so
 lib/libdha-aidl.so
-vendor/lib/lib_uree_mtk_crypto.so
-vendor/lib/lib_uree_mtk_modular_drm.so
-vendor/lib/lib_uree_mtk_video_secure_al.so
-vendor/lib/liboemcrypto.so
 vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libplayreadydrmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/lib_uree_mtk_crypto.so
+vendor/lib/lib_uree_mtk_modular_drm.so
+vendor/lib/lib_uree_mtk_video_secure_al.so
+vendor/lib/liboemcrypto.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.mt8163.so
@@ -57,14 +57,14 @@ vendor/etc/mtk_omx_core.cfg
 vendor/lib/libGdmaScalerPipe.so
 vendor/lib/libJpgDecPipe.so
 vendor/lib/libJpgEncPipe.so
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxVdecEx.so
+vendor/lib/libMtkOmxVenc.so
 vendor/lib/libSwJpgCodec.so
 vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libmhalImageCodec.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmtkjpeg.so
-vendor/lib/libMtkOmxCore.so
-vendor/lib/libMtkOmxVdecEx.so
-vendor/lib/libMtkOmxVenc.so
 vendor/lib/libstagefrighthw.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodec_oal.so
