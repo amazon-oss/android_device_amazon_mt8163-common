@@ -60,6 +60,15 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/init/camerahalserver.rc)
+            sed -i '/^service camerahalserver/a\    setenv LD_PRELOAD libcamsensormeta_shim.so' "${2}"
+            ;;
+        vendor/lib/libcam.halsensor.so)
+            "${PATCHELF}" --add-needed "libcamsensormeta_shim.so" "${2}"
+            ;;
+        vendor/lib/libcam.client.so)
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
+            ;;
         vendor/lib/libMtkOmxVdecEx.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;

@@ -19,3 +19,12 @@ cc_library {
     ],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libcamsensormeta_shim",
+    srcs: ["libcamsensormeta_shim.cpp"],
+    shared_libs: ["libdl"],
+    ldflags: ["-Wl,-z,global"],
+    compile_multilib: "32",
+    vendor: true,
+}

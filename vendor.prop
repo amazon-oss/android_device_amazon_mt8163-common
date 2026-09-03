@@ -1,6 +1,9 @@
 # Bluetooth
 ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
 
+# Camera
+persist.vendor.camera.count=1
+
 # Dalvik
 dalvik.vm.dex2oat-minidebuginfo=false
 dalvik.vm.madvise-random=true
