@@ -49,14 +49,13 @@ static void set(std::string path, int value) {
  */
 static int getMaxBrightness(std::string path) {
     std::ifstream file(path);
-    int value;
+    int value = 0;
 
-    if (!file.is_open()) {
+    if (!(file >> value) || value <= 0) {
         LOG(WARNING) << "failed to read from " << path.c_str();
-        return 0;
+        return 0xFF;
     }
 
-    file >> value;
     return value;
 }
 
