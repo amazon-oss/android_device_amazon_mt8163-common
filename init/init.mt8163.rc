@@ -23,6 +23,19 @@ on init
     symlink /dev/block/platform/soc/11230000.mmc/by-name/kb /dev/kb
     symlink /dev/block/platform/soc/11230000.mmc/by-name/dkb /dev/dkb
 
+    # Keep background work off most cores, CPU0 never goes offline
+    write /dev/cpuset/foreground/cpus 0-3
+    write /dev/cpuset/background/cpus 0
+    write /dev/cpuset/system-background/cpus 0-2
+    write /dev/cpuset/restricted/cpus 0-1
+    write /dev/cpuset/top-app/cpus 0-3
+
+    mkdir /dev/cpuset/camera-daemon 0750 cameraserver cameraserver
+    write /dev/cpuset/camera-daemon/cpus 0-3
+    write /dev/cpuset/camera-daemon/mems 0
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
+    chmod 0660 /dev/cpuset/camera-daemon/tasks
+
 on fs
     mount_all /vendor/etc/fstab.mt8163 --early
 
