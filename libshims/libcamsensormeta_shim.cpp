@@ -117,3 +117,24 @@ ALIAS(constructCustStaticMetadata_DEVICE_SCALER_SENSOR_DRVNAME_OV9734_MIPI_RAW, 
       constructCustStaticMetadata_DEVICE_SCALER_SENSOR_DRVNAME_GC2375MIPI_RAW_CHXT_REAR)
 ALIAS(constructCustRequestMetadata_SENSOR_DRVNAME_OV9734_MIPI_RAW, kMetadataProvider,
       constructCustRequestMetadata_SENSOR_DRVNAME_GC2375MIPI_RAW_CHXT_REAR)
+
+ALIAS(constructCustStaticMetadata_DEVICE_CAMERA_SENSOR_DRVNAME_GC0312_RAW, kHalSensor,
+      constructCustStaticMetadata_DEVICE_CAMERA_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+ALIAS(constructCustStaticMetadata_DEVICE_FLASHLIGHT_SENSOR_DRVNAME_GC0312_RAW, kHalSensor,
+      constructCustStaticMetadata_DEVICE_FLASHLIGHT_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+ALIAS(constructCustStaticMetadata_DEVICE_LENS_SENSOR_DRVNAME_GC0312_RAW, kHalSensor,
+      constructCustStaticMetadata_DEVICE_LENS_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+ALIAS(constructCustStaticMetadata_DEVICE_SENSOR_SENSOR_DRVNAME_GC0312_RAW, kHalSensor,
+      constructCustStaticMetadata_DEVICE_SENSOR_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+ALIAS(constructCustStaticMetadata_DEVICE_TUNING_3A_SENSOR_DRVNAME_GC0312_RAW, kHalSensor,
+      constructCustStaticMetadata_DEVICE_TUNING_3A_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+
+ALIAS_NO_FACE_DETECT(constructCustStaticMetadata_DEVICE_FEATURE_SENSOR_DRVNAME_GC0312_RAW,
+                     kMetadataProvider,
+                     constructCustStaticMetadata_DEVICE_FEATURE_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+ALIAS(constructCustStaticMetadata_DEVICE_REQUEST_SENSOR_DRVNAME_GC0312_RAW, kMetadataProvider,
+      constructCustStaticMetadata_DEVICE_REQUEST_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+ALIAS(constructCustStaticMetadata_DEVICE_SCALER_SENSOR_DRVNAME_GC0312_RAW, kMetadataProvider,
+      constructCustStaticMetadata_DEVICE_SCALER_SENSOR_DRVNAME_GC030A_MIPI_RAW)
+ALIAS(constructCustRequestMetadata_SENSOR_DRVNAME_GC0312_RAW, kMetadataProvider,
+      constructCustRequestMetadata_SENSOR_DRVNAME_GC030A_MIPI_RAW)
