@@ -325,6 +325,8 @@ on early-boot
     wait_for_prop sys.all.modules.ready 1
 
 on boot
+    start vendor.thermal_policy
+
     chmod 0660 /sys/power/autosleep
 
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
@@ -396,6 +398,13 @@ service vendor.media.omx /vendor/bin/hw/android.hardware.media.omx@1.0-service
     writepid /dev/cpuset/foreground/tasks
 
 service vendor.insmod_sh /vendor/bin/init.insmod.sh
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service vendor.thermal_policy /vendor/bin/init.thermal_policy.sh
     class main
     user root
     group root system

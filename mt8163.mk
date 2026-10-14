@@ -161,6 +161,7 @@ PRODUCT_PACKAGES += \
     init.mt8163.rc \
     init.mt8163.usb.rc \
     init.mt8163.power.rc \
+    init.thermal_policy.sh \
     ueventd.mt8163.rc
 
 # Sensors

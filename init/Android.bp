@@ -29,3 +29,9 @@ sh_binary {
     src: "init.insmod.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "init.thermal_policy.sh",
+    src: "init.thermal_policy.sh",
+    vendor: true,
+}
