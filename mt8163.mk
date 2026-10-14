@@ -173,6 +173,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/amazon
 
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal_policy
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
