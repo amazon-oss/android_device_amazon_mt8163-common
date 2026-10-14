@@ -123,7 +123,8 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayMT8163
+    FrameworksResOverlayMT8163 \
+    TetheringResOverlayMT8163
 
 # Permissions
 PRODUCT_COPY_FILES += \
