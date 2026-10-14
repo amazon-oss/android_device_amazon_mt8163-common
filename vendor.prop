@@ -31,7 +31,7 @@ ro.lmk.use_new_strategy=true
 ro.config.low_ram=true
 
 # Media
-debug.stagefright.ccodec=0
+debug.stagefright.c2-poolmask=851968
 ro.have_aacencode_feature=1
 vendor.mtk.vdec.waitkeyframeforplay=1
 ro.vendor.mtk_sec_video_path_support=1
