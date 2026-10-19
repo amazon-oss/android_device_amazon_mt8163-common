@@ -44,7 +44,8 @@ PRODUCT_COPY_FILES += \
 
 # Amazon Init
 PRODUCT_PACKAGES += \
-    amazon_init
+    amazon_init \
+    amazon_init.recovery
 
 # Binder
 PRODUCT_PACKAGES += \

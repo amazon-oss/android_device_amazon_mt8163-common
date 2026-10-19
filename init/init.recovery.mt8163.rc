@@ -8,6 +8,7 @@ on init
 
 on fs
     symlink /dev/block/platform/soc/11230000.mmc /dev/block/platform/bootdevice
+    exec - root root -- /system/bin/amazon_init --links
 
 service init-recovery-mt8163-sh /init.recovery.mt8163.sh
     user root
