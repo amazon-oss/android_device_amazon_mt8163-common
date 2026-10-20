@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.mt8163
+    android.hardware.light-service.amazon
 
 # Livedisplay
 PRODUCT_PACKAGES += \
